@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form to send message to robin lu web desinger developer, and UX UI designer">
+    <meta name="author" content="Robin Sway Lu">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- EXTRACT ADDITIONAL STYLING HERE =======> -->
+    <style>
+        html, body{
+            height:980px;
+        }
+        .container {
+            width: auto;
+            max-width: 800px;
+            font-size: 1em;
+            font-family: times;
+            background: white;
+            color:#444;
+        }
+        
+        h1{
+            font-size: 3.5em;
+            font-weight: lighter;
+        }
+        h2{
+            font-size: 2.5em;
+            font-weight: lighter;
+            line-height: 3px;
+            margin: 5% 0;
+        }
+        
+        label{
+            font-size: em;
+            font-weight: lighter;
+            font-family: times;
+        }
+        
+        .form {
+           height: 1500px;
+        }
+        
+        .input-group #name,
+        .input-group #email,
+        .input-group #message {
+            border-radius: 2.5%;
+            padding: 13px 13px 13px 54px;
+        }
+        
+       .btn {
+            background-color: black;
+            border: 1px solid #ddd;
+            padding: 1% 5%;
+            color:whitesmoke;
+            
+       } 
+        .btn:hover {
+            background-color: whitesmoke;
+            border: 3px solid #fff;
+            color:black;
+       } 
+        
+        .btn-default:active, .btn:focus {
+            background-color: gray;
+            border: 3px solid #fff;
+            color:black;
+    	outline: none !important;
+       } 
+        
+        #name {
+            background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+            background-size: 30px 30px;
+            background-position: 11px 8px;
+            background-repeat: no-repeat;
+        }
+        
+        #email {
+            background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+            background-size: 30px 30px;
+            background-position: 11px 8px;
+            background-repeat: no-repeat;
+        }
+        
+        #message {
+            background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+            background-size: 30px 30px;
+            background-position: 11px 8px;
+            background-repeat: no-repeat;
+        }
+        
+        .error {
+            color: orangered;
+        }
+        
+        #sendingStatus{
+            font-size:2.5em;
+        }
+        .wrapContain{
+            background:whitesmoke;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            var from, to, subject, text;
+
+            $('#contactForm').validate({ // initialize the plugin
+                ignore: ".ignore",
+                rules: {
+                    name: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    message: {
+                        required: true,
+                        minlength: 10
+                    },
+                    "hiddenRecaptcha": {
+                        required: function () {
+                            if (grecaptcha.getResponse() == '') {
+                                return true;
+                            } else {
+                                return false;
+                            }
+                        }
+                    }
+                },
+                submitHandler: function (form) {
+                    //subject = $("#reason option:selected").text();
+                    text = $("#email").val() + "\n" + $("#name").val() + "\n" + $("#message").val();
+                    $("#sendingStatus").text("Sending E-mail...");
+                    $.get("http://localhost:3000/send", {
+                        subject: "Email from Robin's personal website",
+                        text: text
+                    }, function (data) {
+                        if (data == "sent") {
+                            $("#sendingStatus").empty().html(
+                                "I have recieved your message. Thank you for your interest."
+                            );
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+<div class= "wrapContain">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Contact Robin Lu</h1>
+                <h2>Mail me: <a href="mailto:robinswaylu@gmail.com">robinswaylu@gmail.com</a></h2>
+                <h2>Call me: <a href="tel:16262153341">(626)215-3341</a></h2>
+                 
+                <form role="form" id="contactForm" data-toggle="validator" data-disable="false">
+                    <!--NAME-->
+                    <div class="form-group">
+                        <label class="control-label" for="name">Name</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control input-lg" id="name" name="name" style="width:100%" />
+                        </div>
+                    </div>
+
+                    <!--subject
+                    <div class="form-group">
+                        <label class="control-label" for="email">Reason for Contact</label>
+                        <select name="reason" id="reason" class="form-control" style="width:50%">
+                            <option value="General Inquiry">General Inquiry</option>
+                            <option value="Work Opportunity">Work Opportunity</option>
+                        </select>
+                    </div>
+-->
+                    <!--email-->
+                    <div class="form-group">
+                        <label class="control-label" for="email">Email Address</label>
+                        <div class="input-group">
+                            <input type="email" class="form-control input-lg" id="email" name="email" style="width:150%" />
+                        </div>
+                    </div>
+
+                    <!--content-->
+                    <div class="form-group">
+                        <label class="control-label" for="message">Message</label>
+                        <div class="input-group">
+                            <textarea rows="5" cols="30" class="form-control input-lg" id="message" name="message"  style="width:150%;"></textarea>
+                        </div>
+                    </div>
+
+                    <!--Google captcha-->
+
+                    <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha">
+                    <div class="g-recaptcha" data-sitekey="6Lddlg8TAAAAAFAOxdzqM-tR9q-EvJLbUYjtvQRw" data-theme="light"></div>
+
+                    <!--Submit-->
+                    <button type="submit" id="send_email" class="btn btn-lg" data-loading-text="Sending..." style="display: block; margin-top: 10px;">Submit</button>
+                    <span id="sendingStatus"></span>
+                </form>
+            </div>
+        </div>
+        <!--/row-->
+        <hr>
+    </div>
+    <!--/.container--></div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="./contact-form.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</body>
+
+</html>
