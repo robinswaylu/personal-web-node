@@ -30,4 +30,4 @@ robinswaylu/personalWebsite:
 
   #The Exec section executes and monitors the application: distel.li/execsection
   Exec:
-    - /usr/bin/nodejs app.js
+    - /usr/bin/nodejs server.js
