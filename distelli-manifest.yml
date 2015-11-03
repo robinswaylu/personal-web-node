@@ -4,6 +4,12 @@ robinswaylu/personalWebsite:
   PkgInclude:
     - '*'
 
+  PkgExclude:
+  - node_modules/
+  
+  PreRelease:
+  - npm install
+  
   #The Build section is for specifying build and pre-packaging steps: http://distel.li/buildsection
   Build:
     - echo "Begin Build"
@@ -13,14 +19,15 @@ robinswaylu/personalWebsite:
   #The PreInstall section occurs before install: distel.li/preinstallsection
   PreInstall:
     - echo "Begin PreInstall"
-    #- sudo apt-get -y update
-    #- sudo apt-get -y install nodejs
-    #- sudo apt-get -y install npm
+    - sudo apt-get -y update
+    - sudo apt-get -y install nodejs
+    - sudo apt-get -y install npm
 
   #The PostInstall section occurs after install: http://distel.li/postinstallsection
   PostInstall:
     - echo "Begin PostInstall"
+    - npm install
 
   #The Exec section executes and monitors the application: distel.li/execsection
   Exec:
-    #- /usr/bin/nodejs app.js
+    - /usr/bin/nodejs app.js
