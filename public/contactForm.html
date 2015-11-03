@@ -139,7 +139,7 @@
                     //subject = $("#reason option:selected").text();
                     text = $("#email").val() + "\n" + $("#name").val() + "\n" + $("#message").val();
                     $("#sendingStatus").text("Sending E-mail...");
-                    $.get("http://162.243.149.69/send", {
+                    $.get("http://www.robinswaylu.com/send", {
                         subject: "Email from Robin's personal website",
                         text: text
                     }, function (data) {
