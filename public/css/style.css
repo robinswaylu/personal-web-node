@@ -47,16 +47,72 @@ h1,
 --------------------------------------------
 navigation bar
 --------------------------------------------- */
+@media (max-width: 1991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+        float: left;
+        border: none;
+        margin-top: 2%;
+        margin-left: 2%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color:white;
+        width:25px;
+    }
+    .navbar .navbar-toggle:hover,
+    .navbar .navbar-toggle:active,
+    .navbar .navbar-toggle:focus {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .navbar-collapse {
+        width: 100%;
+        height: 991px;
+        border-top: 1px solid transparent;
+        background-color:  rgba(0, 0, 0, 0.75);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+
 .navbar{
-  background: rgba(0,0,0,0);
+  background: rgba(0,0,0,0.0);
   border:none;
   /*margin: 0 !important;*/
 }
 
 .nav.navbar-nav li a {
     color: ghostwhite;
+    font-size: 3em;
+    line-height: 45px;
+    text-align: center;
 }
-
 
 /*
 --------------------------------------------
