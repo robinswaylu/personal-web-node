@@ -98,9 +98,11 @@ body,
 html {
     h: 100%;
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
     border: 0;
+    max-width: 100%; 
     background-color: white;
     font-family: 'Slabo 13px', serif;
 }
@@ -199,7 +201,7 @@ navigation bar
 }
 
 .nav.navbar-nav li a:hover {
-    color: pink;
+    color: red;
 }
 
 
@@ -210,8 +212,8 @@ landing page
 */
 
 .firstImg {
+    height: 1010px;
     margin-top: -20px;
-    background-color: white;
     background-size: cover;
 }
 
@@ -232,7 +234,6 @@ landing page
     flex-direction: column;
 }
 
-
 h2 {
     text-align: center;
     font-size: 4em;
@@ -248,9 +249,8 @@ h2 {
     margin-top: 1%;
     font-size: 2.3em;
     background: none;
-    border: none; 
+    border: none;
 }
- 
 
 .readMore .btn:hover {
     color: red;
@@ -275,10 +275,30 @@ h2 {
     .readMore .btn {
         font-size: 1em;
     }
-    .resumeBtn{
+    .resumeBtn {
         display: none;
     }
 }
+
+@media(max-width: 667px) {
+    .firstImg {
+        margin-top: -40%;
+    }
+}
+
+@media(max-width: 900px) {
+    .firstImg {
+        height: 800px;
+        margin-top: -20%;
+    }
+}
+
+@media(min-width: 667px) and (max-width: 1224px) {
+    .firstImg {
+        height: 800px;
+    }
+}
+
 
 /*
 --------------------------------------------
@@ -287,20 +307,21 @@ about page
 */
 
 .aboutPage {
-    padding-top: 5%;
-    margin-top: -10px;
+    height: 779px;
+    margin: 3% 0 0 0;
 }
 
 .aboutPage p {
-    color: #393c4f;
     margin: 3%;
     margin-bottom: 0%;
+    font-size: 1.3em;
 }
 
 .carousel {
     height: 400px;
     width: 100%;
-    margin: 5% 0;
+    margin: 8% 0;
+    margin-bottom: 0%;
 }
 
 
@@ -311,17 +332,18 @@ about page
     background-color: #777;
 }
 
+@media(max-width: 667px) {
+    .carousel .item {
+        height: 250px;
+    }
+}
+
 .carousel-inner > .item > img {
     position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
     height: 100%;
-}
-
-.carousel-control.left,
-.carousel-control.right {
-    background-image: none
 }
 
 .image2 {
@@ -334,13 +356,20 @@ about page
     }
 }
 
+@media(max-width: 1024px) {
+    .aboutPage p {
+        font-size: 1em;
+    }
+}
+
 
 /*
 --------------------------------------------
 skillset page
 --------------------------------------------
 */
-.skillPage{
+
+.skillPage {
     padding-bottom: 0;
 }
 
@@ -350,16 +379,6 @@ skillset page
     }
     .skillPageM {
         display: block !important;
-    }
-    .skillPageM h1{
-          padding-top:30%;
-    }
-}
-
-@media(max-width: 667px) and (min-width: 1024px) {
-    .skillPage h1 {
-        padding-top: 50%;
-        margin-top: 50%;
     }
 }
 
@@ -391,7 +410,7 @@ skillset page
 
 .skillPageM {
     height: 500px;
-    margin: 0;
+    margin: 1%;
     padding: 0;
     display: none;
     text-align: center;
@@ -410,13 +429,14 @@ project page
 */
 
 .project .colorBlock {
-    background-color: ;
+    margin-top: 5%;
     width: 100%;
     height: 155px;
+    background-color: black;
 }
 
 .project .colorBlock h1 {
-    color: black;
+    color: white;
     font-size: 3.5em !important;
 }
 
@@ -475,28 +495,34 @@ contact page
 --------------------------------------------- 
 */
 
-.contact-text {
-    color: black
+.workBtn {
+    font-size: 2.3em;
+    background: red;
+    border: red;
+    color: white;
 }
 
-.contact-text h2 {
-    color: black
-}
-
-.mail-link {
+.workBtn:hover {
+    color: white;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
     -webkit-transition: 0.2s;
     transition: 0.2s;
 }
 
-.mail-link:hover {
-    color: #fff;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    letter-spacing: 1px;
+.workBtn:active:hover,
+.workBtn:active:focus {
+    background: none;
+    -webkit-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    transform: translateY(20px);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
 
 footer {
     text-align: center;
     padding: 80px 0;
-    background: rgba(200, 200, 200, 0.4);
+    background: rgba(200, 200, 200, 0.1);
 }
