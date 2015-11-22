@@ -104,7 +104,8 @@ html {
     border: 0;
     max-width: 100%; 
     background-color: white;
-    font-family: 'Slabo 13px', serif;
+    font-family: 'Slabo 13px', serif; 
+
 }
 
 h1 {
@@ -377,6 +378,7 @@ skillset page
 
 .skillPage {
     padding-bottom: 0;
+    width: 100%;
 }
 
 @media(max-width: 667px) {
@@ -385,6 +387,7 @@ skillset page
     }
     .skillPageM {
         display: block !important;
+    
     }
 }
 
@@ -433,6 +436,9 @@ skillset page
 project page
 --------------------------------------------- 
 */
+.project{
+    width: 100%;
+}
 
 .project .colorBlock {
     margin-top: 5%;
@@ -450,6 +456,7 @@ project page
     margin: -2px;
     padding: 0;
     border: 2px outset rgba(255, 255, 255, 0.1);
+      
 }
 
 .portfolio-item img {
@@ -502,7 +509,8 @@ contact page
 */
 
 .workBtn {
-    font-size: 1.3em;
+    margin-top: 5%;
+    font-size: 0.9em;
     background: red;
     border: red;
     color: white;
