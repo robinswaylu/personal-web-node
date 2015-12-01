@@ -1,0 +1,137 @@
+body {
+  font-family: 'FZLanTingHei', 'lanLantinghei', '方正兰亭黑','Microsoft Yahei', '微软雅黑'，Heiti, "黑体", 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+  font-size: 12px;
+  color: rgba(102, 102, 102, 1);
+}
+
+a {
+  color: #00B7FF;
+}
+
+.banner-section {
+  display: table;
+  width: 100%;
+  min-height: 550px;
+  margin: 0;
+  padding: 0;
+  background: url(../images/banner2.png) no-repeat;
+  background-size: 100%;
+}
+
+.banner-section-other {
+  display: table;
+  width: 100%;
+  min-height: 400px;
+  margin: 0;
+  padding: 0;
+  background: url(../images/banner.png) no-repeat;
+  background-size: 100%;
+}
+
+
+.banner-section img {
+  width: 100%;
+}
+
+.banner-section .banner-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.banner-section .banner-content-main {
+  font-size: 48px;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+
+.banner-section .banner-content-small {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.banner-section .banner-content-bottom {
+  font-size: 16px;
+  border: solid 1px white;
+  width: 120px;
+  height: 35px;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.banner-section .banner-content-bottom:hover {
+  cursor: pointer;
+}
+
+.banner-bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #2E3E4F;
+  padding: 30px 50px 30px 50px;
+}
+
+/*Modal*/
+.modal-content {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.modal-content h4 {
+  font-weight: 800;
+}
+
+.modal-content .control-label{
+    margin-right: 30px;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.modal-body .form-input {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-body .form-input label{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.modal-body .form-input div{
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+}
+
+
+.form-center {
+  width: 60%;
+  margin: 10px auto;
+}
+
+.modal-body .modal-title {
+  margin-bottom: 30px;
+}
+
+.modal-body .button-group{
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+
+
+.main::after, .info-section::after, .tpmp-section::after, .courses-list::after, .class-title::after, .teacher-content::after, .footer-end::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+

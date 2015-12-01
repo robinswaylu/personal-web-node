@@ -1,0 +1,215 @@
+
+ 
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+ <!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="//v2.zopim.com/?3VdxTeN8XlhQM6n63KrdWgVfMohkUXYn";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zopim Live Chat Script-->
+<meta charset="UTF-8"><link rel="shortcut icon" type="image/x-icon" href="#"><link rel="canonical" href="#"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta property="og:site_name" content="Back At You Media"><meta property="og:title" content="Back At You Media"><meta property="og:url" content="#"><meta property="og:type" content="website"><meta itemprop="name" content="Back At You Media"><meta itemprop="url" content="#"><meta name="twitter:title" content="Back At You Media"><meta name="twitter:url" content="#"><meta name="twitter:card" content="summary"><meta name="description" content="Back At You Media"><title>Back At You Media</title><link href="./d_files/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="./d_files/bootstrap.min(1).css"><link rel="stylesheet" href="./d_files/bootstrap-theme.min.css"><link rel="stylesheet" href="./d_files/style.css"><link rel="stylesheet" href="./d_files/font-awesome.css"><link rel="stylesheet" href="./d_files/headerStyle.css"><style media="print" class="jx_ui_StyleSheet" __jx__id="___$_2" type="text/css">.zopim { display: none !important }</style></head>
+
+
+
+<body> 
+    <header>
+        <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://localhost:3003/help#"> <!--<img style="float:left; color:white; height:100%;" src="">-->&nbsp; Back At You Media</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">BLOG</a></li>
+                     <li><a href="#">SUPPORT</a></li>
+                    <li><a href="#">HELP</a></li>
+                    <li data-toggle="modal" data-target="#myModal">
+                        <a>
+                            <button class="btn btn-xs headerBtn">Login</button>
+                        </a>
+                    </li>
+                    <li data-toggle="modal" data-target="#myModalSignup">
+                        <a>
+                            <button class="btn btn-xs headerBtn">SIGN UP</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+    </header>
+
+    <!-- Modal Login-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form action="http://localhost:3003/login" method="post" class="form-horizontal form-center">
+                        <h4 class="modal-title text-center" id="myModalLabel">Sign in</h4>
+                        <div class="form-group form-input">
+                            <label for="inputEmail3" class="control-label">Email</label>
+                    
+                            <div>
+                                <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+                            </div>
+
+                        </div>
+                        <div class="form-group form-input">
+                            <label for="inputEmail3" class="control-label">Password</label>
+                        
+                            <div>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                            </div>
+
+                        </div>
+                        <div class="button-group">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal SignUp-->
+    <div class="modal fade" id="myModalSignup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form action="http://localhost:3003/api/users" method="post" class="form-horizontal form-center">
+                        <h4 class="modal-title text-center" id="myModalLabel">Sign up</h4>
+                        <div class="form-group form-input">
+                            <label for="exampleInputEmail1" class="control-label">Email</label>
+
+                            <div>
+                                <input type="email" class="form-control" id="signupUserName" name="username" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="form-group form-input">
+                            <label for="exampleInputEmail1" class="control-label">Last Name</label>
+                           
+                            <div>
+                                <input type="text" class="form-control" id="signupUserName" name="lastName" placeholder="Lastname">
+                            </div>
+                        </div>
+                        <div class="form-group form-input">
+                            <label for="exampleInputEmail1" class="control-label">First Name</label>
+                            
+                            <div>
+                                <input type="text" class="form-control" id="signupUserName" name="firstName" placeholder="Firstname">
+                            </div>
+                        </div>
+
+                        <div class="form-group form-input">
+                            <label for="inputEmail3" class="control-label">Password</label>
+        
+                            <div>
+                                <input type="password" class="form-control" id="signupPassword1" name="password" placeholder="Password">
+                            </div>
+                        </div>
+                
+                        <div class="button-group">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<link rel="stylesheet" href="./d_files/help.css">
+
+<div class="container">
+    <img class="img-responsive" src="./d_files/YouTube_Banner.jpg">
+<div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="http://localhost:3003/help#buyer" aria-controls="buyer" role="tab" data-toggle="tab">For Buyer</a></li>
+    <li role="presentation"><a href="http://localhost:3003/help#seller" aria-controls="seller" role="tab" data-toggle="tab">For Seller</a></li>
+  </ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="buyer" style="background-color:white;">
+        <span class="col-xs-12 question" style="margin-top:3%;">
+                  1. when I opened the campaign report, the Shares KPI (Top Right Corner) is showing me a number. Can you explain to me how those shares were calculated? 
+        </span>
+        <span class="col-xs-12 answer">
+                In regards to Clicked shared links stat, the number is calculated from the total number of times a users has clicked your campaign bit.ly link to reach the campaign.               
+        </span>
+         <span class="col-xs-12 question">
+                   2. Why can't I resume my collection?
+        </span>
+        <span class="col-xs-12 answer">
+                    A fix has been released for this issue. You should no longer see an error message when making changes to your gallery.            
+        </span>
+         <span class="col-xs-12 question">
+                   3. How do I decide if a Professional selling plan is right for me?
+        </span>
+        <span class="col-xs-12 answer">
+                   Our Professional selling plan is optional--you do not need a paid subscription to begin selling on our site. That said, the Professional selling plan has many benefits for frequent or volume sellers.               
+        </span>
+         <span class="col-xs-12 question">
+                  4. How do I decide if a Professional selling plan is right for me?
+        </span>
+        <span class="col-xs-12 answer">
+                   Our Professional selling plan is optional--you do not need a paid subscription to begin selling on our site. That said, the Professional selling plan has many benefits for frequent or volume sellers.      
+        </span>
+    </div>
+    <div role="tabpanel" class="tab-pane " id="seller" style="background-color:white;">
+            <span class="col-xs-12 question" style="margin-top:3%;">
+                  1.How will I know when I have a sale?
+        </span>
+        <span class="col-xs-12 answer">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum                        
+        </span>
+         <span class="col-xs-12 question">
+                  2. Are there any fees for selling?
+        </span>
+        <span class="col-xs-12 answer">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum              
+        </span>
+         <span class="col-xs-12 question">
+                   3. How can buyers see all of my listings in one place?
+        </span>
+        <span class="col-xs-12 answer">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum              
+        </span>
+         <span class="col-xs-12 question">
+                  4. Can I put my account on hold while I go on vacation?
+        </span>
+        <span class="col-xs-12 answer">
+                    Yes, you can do just that with the Listings Status feature.          
+        </span>
+    </div>
+</div>
+</div>
+    
+<a class="col-xs-12 col-lg-5 col-lg-offset-5" href="tel:12345678">
+    Have Questions? Call us at:(123)123-1234
+</a>
+	</div>
+		<script src="./d_files/jquery.min.js"></script>
+		<script src="./d_files/bootstrap.min.js"></script>
+		<script src="./d_files/jquery.appear.js"></script>
+		<script src="./d_files/jquery.appear(1).js"></script>
+		<script src="./d_files/modernizr.js"></script>
+		<script src="./d_files/animation.js"></script>
+
+ 
+<img id="hzDownscaled" style="position: absolute; top: -10000px;"></body></html>
