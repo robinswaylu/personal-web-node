@@ -7,87 +7,9 @@
 simple reset
 --------------------------------------------- */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,
+h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,dl,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,
+canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -105,7 +27,6 @@ html {
     max-width: 100%; 
     background-color: white;
     font-family: 'Slabo 13px', serif; 
-
 }
 
 h1 {
@@ -133,7 +54,6 @@ a {
     background-color: rgba(0, 0, 0, 0.5);
     /*dim the background*/
 }
-
 
 /*
 --------------------------------------------
@@ -312,7 +232,6 @@ h2 {
 about page
 --------------------------------------------- 
 */
-
 .aboutPage {
     height: 779px;
     margin: 3% 0 0 0;
@@ -331,9 +250,7 @@ about page
     margin-bottom: 0%;
 }
 
-
 /* Declare heights because of positioning of img element */
-
 .carousel .item {
     height: 400px;
     background-color: #777;
@@ -375,7 +292,6 @@ about page
 skillset page
 --------------------------------------------
 */
-
 .skillPage {
     padding-bottom: 0;
     width: 100%;
@@ -387,7 +303,6 @@ skillset page
     }
     .skillPageM {
         display: block !important;
-    
     }
 }
 
@@ -470,11 +385,12 @@ project page
     left: 0;
     width: 100%;
     height: 100%;
-    padding-top: 20%;
-    color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size: 1.5em;
-    line-height: 150%;
+    padding-top: 19%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 1.2em;
+    font-family:  Helvetica, Verdana;
+    line-height: 180%;
     text-align: center;
     z-index: 10;
     opacity: 0;
@@ -538,5 +454,4 @@ contact page
 footer {
     text-align: center;
     padding: 80px 0;
-    background: rgba(200, 200, 200, 0.1);
 }
