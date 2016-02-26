@@ -1,0 +1,924 @@
+/*reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/*clearfix for float element*/
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+
+/*text in between line effect*/
+
+.line-title {
+    position: relative;
+    z-index: 1;
+}
+
+.line-title::before {
+    content: "";
+    border-top: 2px solid #dfdfdf;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 86.4%;
+    z-index: -1;
+}
+
+.line-title span {
+    background: #fff;
+    padding: 0 15px;
+}
+
+/* Rectangle In hover effect */
+
+.rectangle-in {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    background: rgb(216, 147, 41);
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.rectangle-in:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.rectangle-in:hover,
+.hvr-rectangle-in:focus,
+.hvr-rectangle-in:active,
+.nav-rectangle-in:hover {
+    color: white;
+}
+
+.rectangle-in:hover:before,
+.hvr-rectangle-in:focus:before,
+.hvr-rectangle-in:active:before {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+
+
+/*
+end miscellaneous
+start main css
+*/
+
+body {
+    background-color: white;
+    overflow-x: hidden;
+    font-family: "Myriad Pro", Myriad, Arial, sans-serif;
+}
+
+h2,
+h3 {
+    color: #000000;
+    font: italic 36px / 30px Didot;
+    font-weight: lighter;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.topLine {
+    background-color: #d89329;
+    height: 9px;
+}
+
+
+/*
+header
+*/
+
+header {
+    background: #787878;
+    /* Old browsers */
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #787878 0%, #ffffff 33%, #ffffff 66%, #787878 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-linear-gradient(left, #787878 0%, #ffffff 33%, #ffffff 66%, #787878 100%);
+    background: linear-gradient(to right, #787878 0%, #ffffff 33%, #ffffff 66%, #787878 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#787878', endColorstr='#787878', GradientType=1);
+    /* IE6-9 */
+    width: 100%;
+    height: 195px;
+    text-align: center;
+}
+
+header .wrapper {
+    height: 100%;
+    overflow: hidden;
+}
+
+header .wrapper div {
+    position: relative;
+    display: block;
+    float: left;
+    height: 100%;
+}
+
+header .wrapper .social-Icons {
+    width: 25%;
+    left: 10%;
+}
+
+header .wrapper .social-Icons img {
+    margin: 90px 5px 0;
+}
+
+header .wrapper .mainLogo {
+    width: 50%;
+}
+
+header .wrapper .mainLogo img {
+    margin: 15px auto 0;
+    width: 377px;
+    height: 170px;
+}
+
+header .wrapper .scheduleButton {
+    width: 25%;
+    right: 10%;
+}
+
+header .wrapper .scheduleButton img {
+    margin-top: 69px;
+    width: 208px;
+    height: 70px;
+    border: 1px solid #fff;
+    box-shadow: 2px 3px 4px 0.00px rgba(7, 7, 7, 0.11);
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+@media(min-width:992px) and (max-width: 1199px) {
+    header .wrapper .social-Icons {
+        left: 0;
+    }
+    header .wrapper .scheduleButton {
+        right: 0;
+    }
+}
+
+@media(min-width:768px) and (max-width: 991px) {
+    header .wrapper .social-Icons {
+        left: 0;
+    }
+    header .wrapper .scheduleButton {
+        right: 0;
+    }
+}
+
+@media(max-width:767px) {
+    header .wrapper .social-Icons img {
+        visibility: hidden;
+    }
+    header .wrapper .scheduleButton {
+        visibility: hidden;
+    }
+}
+
+
+/*
+bootstrap navigation bar 
+*/
+
+.navbar,
+.navbar-nav {
+    background-color: #d89329;
+    width: 100%;
+    text-align: center;
+    border: #d89329;
+    border-radius: 0;
+    margin: 0;
+}
+
+.navbar-nav > li {
+    float: none;
+    display: inline-block;
+}
+
+.nav.navbar-nav li a {
+    font: 300 13px Helvetica;
+    padding: 0;
+    margin: 25px 39px 20px 0;
+    color: white;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+}
+
+.nav.navbar-nav li:hover {}
+
+.nav.navbar-nav li a:hover {
+    color: lightgray;
+    -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+
+/*
+first slider image
+*/
+
+.wrap {
+    margin: 0;
+    padding: 0;
+}
+
+.main-slider-wrap {
+    background: url(../assets/slider1.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 776px;
+}
+
+.overlay {
+    background: #787878;
+    /* Old browsers */
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, .15) 0%, rgba(0, 0, 0, .55) 33%, rgba(0, 0, 0, .55) 66%, rgba(0, 0, 0, .15) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, .15) 0%, rgba(0, 0, 0, .55) 33%, rgba(0, 0, 0, .55) 66%, rgba(0, 0, 0, .15) 100%);
+    width: 100%;
+    height: 256px;
+    position: relative;
+    top: 431px;
+}
+
+.overlay div {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.overlay .logoWrapper {
+    width: 33%;
+    text-align: right;
+}
+
+.overlay .sloganWrapper {
+    text-align: center;
+    width: 40%;
+}
+
+.overlay h1,
+.overlay p {
+    color: #ffffff;
+    font: 400 50px 'Trajan Pro 3';
+    letter-spacing: 5px;
+}
+
+.overlay p {
+    font-size: 24px;
+}
+
+.blackHr {
+    background-color: #000;
+    display: block;
+    padding: 0;
+    margin: 0 0 42px 0;
+    height: 17px;
+    width: 100%;
+    border: none;
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+@media(min-width:768px) and (max-width: 1199px) {
+    .overlay p {
+        display: none;
+    }
+    .overlay .logoWrapper {
+        margin-top: 4%;
+        width: 20%;
+        text-align: center;
+    }
+    .overlay .sloganWrapper {
+        text-align: center;
+        width: 70%;
+        height: 100%;
+    }
+    .overlay .sloganWrapper h1 {
+        margin-top: 5%;
+        font-size: 3.4em;
+    }
+}
+
+@media(max-width:767px) {
+    .overlay p {
+        display: none;
+    }
+    .overlay .logoWrapper {
+        display: none;
+    }
+    .overlay .sloganWrapper {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        width: 70%;
+        height: 100%;
+    }
+    .overlay .sloganWrapper h1 {
+        font-size: 2em;
+    }
+}
+
+
+/*
+ paragraph below first slider image
+*/
+
+.belowBlackHr h3 {
+    font-size: 30px;
+    margin: 0 0 28px 0;
+}
+
+.belowBlackHr .paragraphWrapper {
+    display: block;
+    margin: 37px auto;
+    text-align: center;
+}
+
+.belowBlackHr p {
+    width: 100%;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+@media(max-width:500px) {
+    .belowBlackHr .line-title {
+        line-height: 45px;
+    }
+    .belowBlackHr .line-title::before {
+        content: "";
+        border-top: 1px solid white;
+    }
+}
+
+
+/*
+ black Banner
+*/
+
+.blackBanner {
+    background: url(../assets/Banner.png) no-repeat;
+    background-size: 100% 221px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 221px;
+    padding-top: 60px;
+}
+
+.blackBanner img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    width: 60px;
+    height: 74px;
+}
+
+.blackBanner p {
+    font: italic 16px Didot;
+    color: white;
+    line-height: 28px;
+}
+
+.blackBanner p span {
+    font-size: 30px;
+}
+
+.hrBlock hr {
+    border-top: 1px solid grey;
+    width: 97px;
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+@media(min-width:768px) and (max-width: 1600px) {
+    .hrBlock hr {
+        display: none;
+    }
+}
+
+@media(min-width:768px) and (max-width: 990px) {
+    .hrBlock hr {
+        display: none;
+    }
+    .blackBanner div{
+        float: left;
+    }
+    .blackBanner div:nth-child(3) {
+        display: none;
+    }
+     .blackBanner div:nth-child(2) {
+        width: 80%;
+    }
+    .blackBanner p { 
+        text-align: center;  
+    }
+}
+
+@media(max-width:768px) {
+    .hrBlock hr {
+        display: none;
+    }
+    .blackBanner img {
+        display: none
+    }
+    .blackBanner p {
+        font-size: 0.9em;
+        margin-top: -20px;
+        line-height: 20px;
+    }
+}
+
+
+/*
+    Cosmetic Procedures
+*/
+
+.cosmeticSection {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cosmeticSection h2:first-child {
+    margin: 57px auto 37px;
+}
+
+.cosmeticSection .linetitleDiv p {
+    width: 62.1%;
+    margin: 0 auto;
+    line-height: 28px;
+}
+
+.cosmeticProcedureH3 {
+    margin: 18px
+}
+
+.learnMore {
+    margin: 2% auto;
+    text-align: right;
+}
+
+.learnMore a {
+    color: #000000;
+    margin: 1%;
+    font: italic 18px / 28px Didot;
+}
+
+.cosmeticSection .procedures-container .card img {
+    width: 100%;
+}
+
+.modernMan div {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.procedures-container {
+    max-width: 100%;
+}
+
+@media (min-width: 992px) {
+    .procedures-container {
+        width: 62.1%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .procedures-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .procedures-container .col-xs-12 {
+        text-align: center;
+    }
+    .procedures-container .col-xs-12 p {
+        text-align: left;
+    }
+    .cosmeticSection .linetitleDiv p {
+        width: 100%;
+    }
+    .modernMan div {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .linetitleDiv h2::before,
+    .reconstructiveProcedures::before {
+        content: "";
+        border-top: 0px solid white;
+    }
+    .linetitleDiv h2 span,
+    .reconstructiveProcedures span {
+        background: none;
+    }
+}
+
+ 
+/*
+    Meet Our Doctors
+*/
+
+.meetDocSection {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.meetDocSection > div h2 {
+    margin-bottom: 8.5%;
+}
+
+.meetDocSection .card img {
+    width: 100%;
+}
+
+.docBriefText { 
+    font: 600 16px / 14px 'Myriad Pro';
+}
+
+.docQuoteText { 
+    font: italic 14px / 28px 'Myriad Pro';
+    width: 100%;
+    margin: 5.3% auto 6.6% auto;
+}
+
+.meetDocSection a {
+    float: right; 
+    font: italic 18px / 28px Didot;
+    margin-bottom: 91px;
+}
+
+@media (max-width: 768px) {
+    .meetDocSection .card img {
+        width: 100%;
+    }
+    .meetDocSection .line-title {
+        line-height: 45px;
+    }
+    .meetDocSection .line-title::before {
+        content: "";
+        border-top: 1px solid white;
+    }
+}
+
+
+/*
+    Before and after black banner
+*/
+
+.secondBanner {
+    background: url(../assets/banner2.jpg) no-repeat;
+    background-size: 100% 467px;
+    width: 100%;
+    height: 467px;
+    text-align: center;
+    padding-top: 3.3%;
+}
+
+.line-title2 {
+    color: #ffffff;
+    font: italic 50px / 30px Didot;
+}
+
+.line-title2::before {
+    content: "";
+    border-top: 2px solid white;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.line-title2 span {
+    background: url(../assets/bgReplace.png);
+}
+
+.secondBanner p {
+    color: #ffffff;
+    font: 400 16px / 28px 'Myriad Pro';
+    width: 59.5%;
+    margin: 2.2% auto;
+}
+
+.secondBanner a { 
+    font: italic 25px / 28px Didot;
+}
+
+@media (max-width: 768px) {
+    .secondBanner p {
+        font-size: 14px;
+        line-height: 20px;
+        width: 94%;
+        margin: 0 auto;
+    }
+    .secondBanner .line-title {
+        font-size: 2em;
+        line-height: 45px;
+    }
+    .secondBanner .line-title::before {
+        border-top: none;
+    }
+    .line-title2 span {
+        background: none;
+    }
+}
+
+
+/*
+  medSpa Section
+*/
+
+.medSpaSection {
+    background: url(../assets/BCK.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1181px;
+    text-align: center;
+}
+
+.medSpaSection h2 { 
+    font: italic 45pt Didot;
+}
+
+.medSpaSection .line-title { 
+    font: italic 25pt Didot;
+    margin-bottom: 5.7%
+}
+
+.medSpaSection p { 
+    font: 400 16px / 28px 'Myriad Pro';
+    width: 62%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.medSpaSection .woman {
+    float: left;
+}
+
+.listOfBenefits {
+    display: table;
+    position: relative;
+    width: auto;
+    top: 25%;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.listOfBenefits > h4 {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.medSpaSection ul {
+    font: 600 20px / 38.836px 'Myriad Pro';
+    text-align: left;
+    padding-left: 25px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 2.5em;
+    -moz-column-gap: 2.5em;
+    column-gap: 2.5em;
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+@media(min-width:768px) and (max-width: 1200px) {
+    .medSpaSection .woman {
+        position: relative;
+        top: 15%;
+        width: 50%;
+    }
+    .listOfBenefits > h4 {
+        font-size: 1em;
+    }
+    .medSpaSection ul {
+        position: relative;
+        padding-right: 15px;
+        font-size: 1em;
+    }
+}
+
+@media(max-width:767px) {
+    .listOfBenefits {
+        display: none;
+    }
+}
+
+
+/*
+  Footer
+*/
+
+footer {
+    background-color: #000000;
+    height: auto;
+    padding-top: 60px;
+    color: white;
+    text-align: center;
+}
+
+.line-title3 {
+    color: #ffffff;
+    font: italic 36pt / 30px Didot;
+    margin-bottom: 40px;
+}
+
+.line-title3 span {
+    background: black;
+}
+
+footer > p {
+    width: 34.4%;
+    margin: 0 auto;
+    font-size: 16pt;
+}
+
+footer p:nth-child(3) {
+    width: 45.9%;
+    margin: 50px auto;
+    font-size: 12pt;
+}
+
+footer .schduleBtn {
+    width: 298px;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 auto 52px;
+    font-size: 20pt;
+    border: 1px solid rgb(216, 147, 41);
+}
+
+footer nav {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+    border-color: rgb(216, 147, 41);
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer nav ul > li {
+    display: inline-block;
+    padding: 28px 0 25px 0;
+    margin-right: 40px;
+}
+
+footer nav li a {
+    font: 300 13px Helvetica;
+    padding: 0;
+    margin: 25px 39px 20px 0;
+    color: white;
+}
+
+footer > img {
+    width: 307px;
+    height: 138px;
+    margin: 33px auto -1%;
+}
+
+.socialMediaIcon {
+    -webkit-filter: brightness(90);
+    filter: brightness(90);
+    margin-bottom: 40px;
+}
+
+footer .copyright {
+    clear: both;
+    padding: 30px;
+    width: 100%;
+    font-size: 14pt;
+}
+
+@media(max-width:767px) {
+    .line-title3 {
+        clear: both; 
+        font: italic 2.7em / 1.3em Didot;
+        margin: 0 0 20px 0;
+    }
+    .line-title3::before {
+        content: "";
+        border-top: 0px solid white;
+    }
+    .line-title3 span {
+        background: none;
+    }
+    footer > p {
+        width: 80%;
+        text-align: left;
+        margin: 0 auto;
+        font-size: 16pt;
+    }
+    footer .schduleBtn {
+        width: 80%;
+        font-size: 1em;
+    }
+    footer nav {
+        display: none;
+    }
+    .address div {
+        width: 100%;
+    }
+    .address div:after {
+        content: "◊";
+        display: block;
+        margin: 5%;
+    }
+    .address div:nth-last-child(1):after {
+        content: "";
+    }
+    footer .copyright {
+        padding-bottom: 12px;
+        color: grey;
+        width: 100%;
+        font-size: 8pt;
+    }
+}

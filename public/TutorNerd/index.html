@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TutorNerds - In-Home Academic Tutoring, Test Prep &amp; Consulting</title>
+
+    <meta name="description" content="In-Home Academic Tutoring, SAT &amp; ACT Test Prep &amp; College Consulting.Tutors teach material according to your goals and learning style.">
+    <meta name="keywords" content="TutorNerds, in-home tutoring, private tutor, tutoring jobs, math tutor, tutoring Irvine, tutoring San Diego, tutoring Newport Beach, tutoring Orange County">
+
+    <!--FB meta-->
+    <meta property="og:url" content="{{pageUrl}}">
+    <meta property="og:image" content="{{imageUrl}}">
+    <meta property="og:description" content="{{description}}">
+    <meta property="og:title" content="{{pageTitle}}">
+    <meta property="og:site_name" content="{{siteTitle}}">
+    <meta property="og:see_also" content="{{homepageUrl}}">
+    <!--Twitter meta-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="{{pageUrl}}">
+    <meta name="twitter:title" content="{{pageTitle}}">
+    <meta name="twitter:description" content="{{description}}">
+    <meta name="twitter:image" content="{{imageUrl}}">
+
+    <!--add favicon-->
+    <link rel="shortcut icon" type="image/png" href="#" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header role="banner" class="header">
+        <div class="wrapper">
+            <div class="logo">
+                <img src="./assets/logo.png" alt="TutorNerds logo">
+            </div>
+            <div class="howItWorks">
+                <a href="#">
+                    <p>How It Works</p>
+                </a>
+            </div>
+            <div class="welcome">
+                <a href="#">
+                    <p>Welcome, Malachi</p>
+                </a>
+            </div>
+            <!-- Notification Button-->
+            <div class="dropdownContainer"> <i class="fa fa-exclamation-circle dropdown-toggle"></i>
+                <ul class="dropdown">
+                    <li><a href="#" style="color: rgba(115, 187, 22, 1)"><i class="fa fa-circle"></i> Message 1</a></li>
+                    <li><a href="#" style="color: rgba(115, 187, 22, 1)"><i class="fa fa-circle"></i> Message 2</a></li>
+                    <li><a href="#">Message 1</a></li>
+                    <li><a href="#">More text, More text</a></li>
+                    <li><a href="#">Message 3</a></li>
+                    <li><a href="#" style="color: rgba(115, 187, 22, 1)"><i class="fa fa-list"></i> View All Notifications</a></li>
+                </ul>
+            </div>
+
+            <a href="#login_form" id="login_pop">
+                <div class="login">
+                    <p>Login</p>
+                </div>
+            </a>
+            <a href="#join_form" id="join_pop">
+                <div class="signUp">
+                    <p>Sign Up</p>
+                </div>
+            </a>
+
+        </div>
+        <!--end header wrapper-->
+    </header>
+    <!--end header-->
+
+    <!--popup modal-->
+    <!--login_form -->
+    <a href="#" class="overlay" id="login_form"></a>
+    <div class="popup">
+        <h2>Welcome Guest!</h2>
+        <p>Please enter your login and password here</p>
+        <form action="#">
+            <div>
+                <input type="text" id="login" value="" placeholder="Login(Email)" autocomplete="off" required/>
+            </div>
+            <div>
+
+                <input type="password" id="password" value="" placeholder="Password" autocomplete="off" required/>
+            </div>
+            <input type="submit" value="Log In" />
+        </form>
+        <a class="close" href="#"></a>
+    </div>
+
+    <!-- join_form -->
+    <a href="#" class="overlay" id="join_form"></a>
+    <div class="popup">
+        <h2>Sign Up for Free Now</h2>
+        <p>To sign up for a free basic account please provide us with some basic information using the contact form below.</p>
+        <form action="#">
+            <div>
+                <input type="email" id="email" value="" placeholder="Login(Email)" autocomplete="off" required/>
+            </div>
+            <div>
+                <input type="password" id="pass" value="" placeholder="Password" autocomplete="off" required/>
+            </div>
+
+            <div>
+                <input type="text" id="firstname" value="" placeholder="First Name" autocomplete="off" required/>
+            </div>
+            <div>
+                <input type="text" id="lastname" value="" placeholder="Last Name" autocomplete="off" required/>
+            </div>
+            <input type="submit" value="Sign Up" />
+        </form>
+        <a class="close" href="#"></a>
+    </div>
+
+    <main class="wrap">
+        <div style="height:70px"></div>
+        <section class="main-slider-wrap">
+            <h1>
+                Online &amp; In-Person Academic <br> Tutoring   &amp; Test Prep with <em>Expert</em> Tutors
+            </h1>
+            <form action="#">
+                <div class="labelWrapper">
+                    <label id="online-search">Online</label>
+                    <label id="in-person-search" class="active">In-Person</label>
+                    <div class="arrow_box arrow_box1"></div>
+                    <div class="arrow_box arrow_box2"></div>
+                </div>
+
+                <input class="inputField subjectSearch" type="text" name="search" placeholder=" What subject would you like help with?">
+                <input class="inputField" id="zip" type="text" name="zip" placeholder=" Your Zip">
+                <br>
+                <input class="submit " type="submit" value="Find your Tutor">
+            </form>
+        </section>
+
+        <section class="getStarted clearfix">
+            <h2>Get started in 3 easy steps</h2>
+            <div>
+                <img src="assets/pickUrSubject.png">
+                <div class="stepsTexts">
+                    <h3>1 | Pick your Subject</h3>
+                    <p>All major academic subjects &amp; grade levels. K-12 &amp; College.</p>
+                </div>
+            </div>
+            <div>
+                <img src="assets/findUrTutor.png">
+                <div class="stepsTexts">
+                    <h3>2 | Find your Tutor</h3>
+                    <p>All major academic subjects &amp; grade levels. K-12 &amp; College.</p>
+                </div>
+            </div>
+            <div>
+                <img src="assets/beginSuccess.png">
+                <div class="stepsTexts">
+                    <h3>3 | Begin your Success</h3>
+                    <p>All major academic subjects &amp; grade levels. K-12 &amp; College.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="getNotified">
+            <h2>Sign up to get notified when we launch</h2>
+            <form action="#">
+                <input class="inputField emailInput" type="email" name="email" placeholder=" type your email here.">
+                <input class="submit " type="submit" value="Notified Me">
+            </form>
+        </section>
+
+        <section class="benefits">
+            <h2>Benefits of TutorNerd</h2>
+            <h3>100% Satisfaction Gurantee | You'll love your tutor or you don't pay </h3>
+            <div class=" imgWrap">
+                <a><img src="assets/professional-tutors.jpg"></a>
+                <a><img src="assets/convinience.jpg"></a>
+                <a><img src="assets/checkr.jpg"></a>
+                <a><img src="assets/attention.jpg"></a>
+                <a><img src="assets/tailored-learning.jpg"></a>
+            </div>
+        </section>
+
+
+
+        <section class="studentsQuotes">
+            <h2>Students love our tutoring</h2>
+            <div class="columnWrap">
+                <div class="quoteWrap">
+                    <img src="assets/smith.png">
+                    <blockquote>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+                    </blockquote>
+                    <cite>D.Smith</cite>
+
+                </div>
+                <div class="quoteWrap">
+                    <img src="assets/farzard.png">
+                    <blockquote>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+                    </blockquote>
+                    <cite>A.Farzad</cite>
+
+                </div>
+            </div>
+            <div class="columnWrap">
+                <div class="quoteWrap">
+                    <img src="assets/cohen.png">
+                    <blockquote>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+                    </blockquote>
+                    <cite>J.Cohen</cite>
+
+                </div>
+                <div class="quoteWrap">
+                    <img src="assets/wayde.png">
+
+                    <blockquote>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+                    </blockquote>
+                    <cite>M.Wayde</cite>
+
+                </div>
+            </div>
+        </section>
+
+        <nav class="nav">
+            <ul>
+                <li class="gurantee"><a href="#">Our Gurantee</a></li>
+                <li class="howItWorksNav"><a href="#">How It Works</a></li>
+                <li class="ourTeam"><a href="#">Our Team</a></li>
+                <li class="Press"><a href="#">Press &amp; Media Coverage</a></li>
+            </ul>
+        </nav>
+
+        <section class="popularSubjects">
+            <h3>Popular Online &amp; In-Person Subjects:</h3>
+            <div class="ulWrap">
+                <h4>Math Tutoring</h4>
+                <ul>
+                    <li>Elementary Math Tutoring</li>
+                    <li>Elementary Math Tutoring</li>
+                    <li>Elementary Math Tutoring</li>
+                </ul>
+            </div>
+            <div class="ulWrap">
+                <h4>Science Tutoring</h4>
+                <ul>
+                    <li>Elementary Math Tutoring</li>
+                    <li>Elementary Math Tutoring</li>
+                    <li>Elementary Math Tutoring</li>
+                </ul>
+            </div>
+            <div class="ulWrap">
+                <h4>Humanities Tutoring</h4>
+                <ul>
+                    <li>Elementary Math Tutoring</li>
+                    <li>Elementary Math Tutoring</li>
+                    <li>Elementary Math Tutoring</li>
+                </ul>
+            </div>
+            <div class="ulWrap">
+                <h4>Computer Science</h4>
+                <ul>
+                    <li>Elementary Math Tutoring</li>
+                    <li>Elementary Math Tutoring</li>
+                    <li>Elementary Math Tutoring</li>
+                </ul>
+            </div>
+            <div class="ulWrap">
+                <h4>Test Preparation</h4>
+                <ul>
+                    <li>Elementary Math Tutoring</li>
+                    <li>Elementary Math Tutoring</li>
+                    <li>Elementary Math Tutoring</li>
+                </ul>
+            </div>
+            <div class="ulWrap">
+                <h4>Admissions Consulting</h4>
+                <ul>
+                    <li>Elementary Math Tutoring</li>
+                    <li>Elementary Math Tutoring</li>
+                    <li>Elementary Math Tutoring</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="sitemap">
+            <div class="ulWrap">
+                <h4>TutorNerd</h4>
+                <ul>
+                    <li>Elementary Math Tutoring</li>
+                    <li>Elementary Math Tutoring</li>
+                    <li>Elementary Math Tutoring</li>
+                </ul>
+            </div>
+            <div class="ulWrap">
+                <h4>Jobs</h4>
+                <ul>
+                    <li>Elementary Math Tutoring</li>
+                    <li>Elementary Math Tutoring</li>
+                    <li>Elementary Math Tutoring</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!--- end main-->
+
+    <footer role="contentinfo">
+        <div>
+            <img src="assets/bottomLogo.png">
+            <p>TutorNerd Inc.@2015 All Rights Reserved.</p>
+        </div>
+        <div>
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Terms of Use</a></p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

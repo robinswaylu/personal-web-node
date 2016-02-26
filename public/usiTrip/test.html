@@ -1,0 +1,179 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<style>
+    .drive-car {
+        display: inline-block;
+        height: auto;
+        width: 100%;
+    }
+    
+    .drive-car .nav {
+        float: right;
+        border-bottom: 0px;
+    }
+    
+    .drive-car .nav li {
+        float: left;
+    }
+    
+    .drive-car .nav-tabs>li.active>a,
+    .drive-car .nav-tabs>li.active>a:focus,
+    .drive-car .nav-tabs>li.active>a:hover {
+        border: none;
+        border-bottom: 5px solid blue;
+    }
+    
+    .drive-car .tab-content {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .navbar-wrap {
+        display: block;
+        height: 55px;
+    }
+    
+    .drive-car .tab-content img {
+        max-width: 100%;
+        width: auto;
+    }
+    
+    .card {
+        height: 300px;
+    }
+    /*==========             
+Top 5 景點 tab
+==========*/
+.top-5 {
+    display: inline-block;
+    width: 100%;
+    margin-top: 25px;
+    background: white; 
+}
+
+.top-5 .nav-pills{
+    margin: 12px auto;  
+}
+ 
+.top-5 .nav-pills li{ 
+    margin-right: 10px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #aaa; 
+    font-size: 0.8em;    
+} 
+.top-5 .nav-pills li a{
+    padding: 5px 10px;
+}
+.top-5 .nav-pills>li.active>a,
+.top-5 .nav-pills>li.active>a:focus,
+.top-5 .nav-pills>li.active>a:hover {
+    border-radius: 10px;
+    background-color: #555; 
+    cursor: pointer;   
+}
+.top-5 .tab-content {
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+}
+.top-5 .tab-pane{ 
+    width: 100%;
+}
+.top-5 .card2 { 
+    height: 280px;
+} 
+.top-imageWrap{
+      height: 100%; 
+    padding-bottom: 11px;
+}
+ 
+.top-5 .tab-content img {
+    height: 100%;
+    max-width: 100%;
+    width: auto;
+}
+</style>
+ 
+    <section class="row">
+            <div class="col-xs-12">
+                <div class="top-5">
+                    <div class="col-xs-12 col-md-2  navbar-header">
+                        <a class="navbar-brand" href="#">
+热门品牌 TOP5</a>
+                    </div>
+                    <ul class="nav nav-pills navbar-right">
+                        <li class="active"><a data-toggle="pill" href="#north-america">北美</a></li>
+                        <li><a data-toggle="pill" href="#south-america">南美</a></li>
+                        <li><a data-toggle="pill" href="#europe">欧洲</a></li>
+                        <li><a data-toggle="pill" href="#asia">亚洲</a></li>
+                    </ul>
+                    <!--- end row for 热门品牌 TOP5 nav-tabs-->
+                    <div class="tab-content">
+                        <div id="north-america" class="tab-pane fade in active">
+                            <div class="col-xs-3 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/high.jpg">
+                                </div>
+                             </div>
+                             <div class="col-xs-4 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/banner.jpg">
+                                </div>
+                             </div>
+                             <div class="col-xs-5 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/banner3.jpg">
+                                </div>
+                             </div>
+                             <div class="col-xs-5 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/banner3.jpg">
+                                </div>
+                             </div>
+                             <div class="col-xs-3 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/banner2.jpg">
+                                </div>
+                             </div>
+                        </div>
+                     
+                        <div id="south-america" class="tab-pane fade">
+                            <div class="col-xs-3 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/high.jpg">
+                                </div>
+                             </div>
+                             <div class="col-xs-4 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/banner.jpg">
+                                </div>
+                             </div>
+                             <div class="col-xs-5 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/banner3.jpg">
+                                </div>
+                             </div>
+                             <div class="col-xs-5 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/banner3.jpg">
+                                </div>
+                             </div>
+                             <div class="col-xs-3 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/banner2.jpg">
+                                </div>
+                             </div>
+                        
+                        </div>
+                        <div id="europe" class="tab-pane fade"></div>
+                        <div id="asia" class="tab-pane fade"></div>
+                    </div>
+                    <!--- end tab content-->
+                </div>
+            </div>
+        </section>
+ 

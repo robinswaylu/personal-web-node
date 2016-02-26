@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Usitrip走四方旅游网</title>
+
+    <meta name="description" content="走四方旅游网（美国华人旅行社）主要为您提供去美国旅游、加拿大旅游等北美旅游服务，推荐旅游线路达到36000多条；同时还提供欧洲/澳新旅游、当地玩乐、景点">
+    <meta name="keywords" content="走四方, 美国旅游, 加拿大旅游, 北美旅游, 旅游服务, 旅游攻略, 美西旅游团行程, 华人旅游">
+
+    <!--FB meta-->
+    <meta property="og:url" content="{{pageUrl}}">
+    <meta property="og:image" content="{{imageUrl}}">
+    <meta property="og:description" content="{{description}}">
+    <meta property="og:title" content="{{pageTitle}}">
+    <meta property="og:site_name" content="{{siteTitle}}">
+    <meta property="og:see_also" content="{{homepageUrl}}">
+    <!--Twitter meta-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="{{pageUrl}}">
+    <meta name="twitter:title" content="{{pageTitle}}">
+    <meta name="twitter:description" content="{{description}}">
+    <meta name="twitter:image" content="{{imageUrl}}">
+
+    <!--add favicon-->
+    <link rel="shortcut icon" type="image/png" href="#" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <div class="slider">
+        <ul>
+            <li class="firstLi">
+                <div class="content">
+                    <a href="#"><h2>畅游世界上最幸福的国度</h2></a> <span>挪威印象</span>
+                </div>
+            </li>
+            <li class="secondLi">
+                <div class="content"><a href="#"><h2>我们内心所渴求的东西</h2></a><span>大溪地  世界潜水者的天堂</span></div>
+            </li>
+            <li class="thirdLi">
+                <div class="content"><a href="#"><h2>一幅壮丽的风景画</h2></a><span>费尔班克斯 气势磅礴的纯净世界</span></div>
+            </li>
+        </ul>
+        <button class="prev"></button>
+        <button class="next"></button>
+        <!--- end button on side of image which control the flow-->
+
+        <ul class="nav-dots">
+            <li data-index="0" class="active"></li>
+            <li data-index="1"></li>
+            <li data-index="2"></li>
+        </ul>
+        <!--- end slider dots indicator-->
+    </div>
+    <!--- end slider-->
+
+    <main class="container">
+        <section class="row">
+            <!--Start row for city tab-->
+            <div class="col-xs-12">
+                <div class="tab-vertical">
+                    <ul class="nav nav-left col-md-3 col-lg-3">
+                        <li class="active">
+                            <a href="#tab1" data-toggle="tab">
+                                <i class="fa fa-hand-peace-o"></i> 北美旅游
+                                <div class="sub-heading">
+                                    <a href="#" class="city">美东</a>
+                                    <a href="#" class="city">美西</a>
+                                    <a href="#" class="city">夏威夷</a>
+                                    <a href="#" class="city">加拿大</a>
+                                </div>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#tab2" data-toggle="tab">
+                                <i class="fa fa-futbol-o"></i> 南美旅游
+                                <div class="sub-heading">
+                                    <a href="#">墨西哥</a>
+                                    <a href="#">坎昆</a>
+                                    <a href="#">巴西</a>
+                                    <a href="#">秘鲁</a>
+                                </div>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab3" data-toggle="tab">
+                                <i class="fa fa-coffee"></i> 欧洲旅游
+                                <div class="sub-heading">
+                                    <a href="#">英国</a>
+                                    <a href="#">法国</a>
+                                    <a href="#">意大利</a>
+                                    <a href="#">德国</a>
+                                </div>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                        <li><a href="#tab4" data-toggle="tab"><i class="fa fa-heart"></i> 亚洲旅游
+                                <div class="sub-heading">
+                                    <a href="#">日本</a>
+                            <a href="#">韩国</a>
+                            <a href="#">中国</a>
+                            <a href="#">新加坡</a>
+                </div>
+                <i class="fa fa-angle-right"></i>
+                </a>
+                </li>
+                <li><a href="#tab5" data-toggle="tab"><i class="fa fa-male"></i> 自由行
+                                <div class="sub-heading">
+                                    <a href="#">定制团</a>
+                    <a href="#">包车</a>
+                    <a href="#">签证</a>
+                    <a href="#">机票</a>
+                    <a href="#">酒店</a>
+            </div>
+            <i class="fa fa-angle-right"></i>
+            </a>
+            </li>
+            <li><a href="#tab6" data-toggle="tab"><i class="fa fa-map-o"></i> 主题旅游
+                                <div class="sub-heading">
+                                    <a href="#">美东</a>
+                <a href="#">美西</a>
+                <a href="#">夏威夷</a>
+                <a href="#">加拿大</a>
+                </div>
+                <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+            <li><a href="#tab7" data-toggle="tab"><i class="fa fa-plane"></i> 特价机票
+                                <div class="sub-heading">
+                                    <a href="#">美中</a>
+                <a href="#">中美</a>
+                <a href="#">美境内</a>
+                <a href="#">商务舱</a>
+                </div>
+                <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+            </ul>
+            <!---end tab naviagation-->
+            <section class="tab-content col-xs-12 col-md-9">
+                <article class="tab-pane active" id="tab1">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="tab-pane" href="#collapseOne">
+                            <i class="fa fa-hand-peace-o"></i> 北美旅游
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse">
+                            <div class="row">
+                                <div class="col-xs-6 col-md-2">
+                                    <img src="assets/ny.png" alt="U.S. East" />
+                                    <h3>美国东海岸</h3>
+                                    <p class="text-muted">U.S. East</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>纽约</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>波士顿</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>华盛顿</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>芝加哥</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>自由女神</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>尼亚加拉瀑布</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>帝国大厦</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>哈佛大学</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-2">
+                                    <img src="assets/lasvegas.png" alt="U.S. West" />
+                                    <h3>美国西海岸</h3>
+                                    <p class="text-muted">U.S. West</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>洛杉矶</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>旧金山</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>拉斯维加斯</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>圣地亚哥</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>大峡谷</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>优胜美地</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>黄石国家公园</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>洛杉矶环球影城</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-2">
+                                    <img src="assets/florida.png" alt="Florida" />
+                                    <h3>
+佛罗里达</h3>
+                                    <p class="text-muted">Florida</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>迈阿密</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>奥兰多</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>罗德岱堡</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>海明威故居</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>小哈瓦那</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-2">
+                                    <img src="assets/hawaii.png" alt="Hawaii" />
+                                    <h3>夏威夷</h3>
+                                    <p class="text-muted">Hawaii</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>檀香山</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>夏威夷岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>茂宜岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>火山岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>威基基海滩</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>珍珠港</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>伊奥拉尼皇宫</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-2">
+                                    <img src="assets/park.png" alt="National Park" />
+                                    <h3>国家公园</h3>
+                                    <p class="text-muted">National Park</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>纽约</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>波士顿</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>华盛顿</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>芝加哥</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>自由女神</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>尼亚加拉瀑布</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>帝国大厦</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>哈佛大学</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-2">
+                                    <img src='assets/canada.png' alt="Canada " />
+                                    <h3>加拿大</h3>
+                                    <p class="text-muted">Canada</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>温哥华</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>多伦多</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>魁北克</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>维多利亚</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>蒙特利尔</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>渥太华</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>落基山</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>班芙国家公园</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!--- end tab1-->
+                <article class="tab-pane" id="tab2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent=".tab-pane" href="#collapseTwo">
+                            <i class="fa fa-futbol-o"></i> 南美旅游
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="row">
+                                <div class="col-xs-6 col-md-3">
+                                    <img src="assets/florida.png" />
+                                    <h3>
+墨西哥</h3>
+                                    <p class="text-muted">Mexico</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>迈阿密</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>奥兰多</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>罗德岱堡</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>海明威故居</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>小哈瓦那</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-3">
+                                    <img src="assets/hawaii.png" />
+                                    <h3>坎昆</h3>
+                                    <p class="text-muted">Cancun</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>女兒島</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>夏威夷岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>茂宜岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>火山岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>威基基海滩</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>珍珠港</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>伊奥拉尼皇宫</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-3">
+                                    <img src="assets/park.png" />
+                                    <h3>巴西</h3>
+                                    <p class="text-muted">National Park</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>纽约</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>波士顿</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>华盛顿</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>芝加哥</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>自由女神</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>尼亚加拉瀑布</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>帝国大厦</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>哈佛大学</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-3">
+                                    <img src='assets/canada.png' />
+                                    <h3>秘鲁</h3>
+                                    <p class="text-muted">Canada</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>温哥华</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>多伦多</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>魁北克</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>维多利亚</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>蒙特利尔</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>渥太华</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>落基山</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>班芙国家公园</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!--- end tab2-->
+                <article class="tab-pane" id="tab3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent=".tab-pane" href="#collapseThree">
+                            <i class="fa fa-coffee"></i> 欧洲旅游
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="row">
+                                <div class="col-xs-6 col-md-3">
+                                    <img src="assets/lasvegas.png" />
+                                    <h3>英国</h3>
+                                    <p class="text-muted">England</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>洛杉矶</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>旧金山</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>拉斯维加斯</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>圣地亚哥</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>大峡谷</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-3">
+                                    <img src="assets/hawaii.png" />
+                                    <h3>法国</h3>
+                                    <p class="text-muted">France</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>檀香山</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>夏威夷岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>茂宜岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>火山岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>威基基海滩</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>珍珠港</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>伊奥拉尼皇宫</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-3">
+                                    <img src="assets/park.png" />
+                                    <h3>意大利</h3>
+                                    <p class="text-muted">Italy</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>纽约</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>波士顿</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>华盛顿</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>芝加哥</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>自由女神</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>尼亚加拉瀑布</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-3">
+                                    <img src='assets/canada.png' />
+                                    <h3>德国</h3>
+                                    <p class="text-muted">Germany</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>温哥华</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>多伦多</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>魁北克</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>维多利亚</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>蒙特利尔</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!--- end tab3-->
+                <article class="tab-pane" id="tab4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent=".tab-pane" href="#collapseFour">
+                            <i class="fa fa-heart"></i> 亚洲旅游
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse">
+                            <div class="row">
+                                <div class="col-xs-6 col-md-2">
+                                    <img src="assets/ny.png" />
+                                    <h3>日本</h3>
+                                    <p class="text-muted">Japan</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>纽约</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>波士顿</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>华盛顿</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>芝加哥</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>自由女神</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>尼亚加拉瀑布</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>帝国大厦</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>哈佛大学</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-2">
+                                    <img src="assets/lasvegas.png" />
+                                    <h3>韩国 </h3>
+                                    <p class="text-muted">Korea</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>洛杉矶</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>旧金山</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>拉斯维加斯</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>圣地亚哥</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>大峡谷</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>优胜美地</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>黄石国家公园</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>洛杉矶环球影城</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-2">
+                                    <img src="assets/florida.png" />
+                                    <h3>
+中国</h3>
+                                    <p class="text-muted">China</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>迈阿密</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>奥兰多</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>罗德岱堡</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>海明威故居</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>小哈瓦那</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-2">
+                                    <img src="assets/hawaii.png" />
+                                    <h3>新加坡</h3>
+                                    <p class="text-muted">Singapor</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>檀香山</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>夏威夷岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>茂宜岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>火山岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>威基基海滩</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>珍珠港</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>伊奥拉尼皇宫</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-2">
+                                    <img src="assets/park.png" />
+                                    <h3>国家公园</h3>
+                                    <p class="text-muted">National Park</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>纽约</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>波士顿</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>华盛顿</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>芝加哥</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>自由女神</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>尼亚加拉瀑布</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>帝国大厦</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>哈佛大学</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-2">
+                                    <img src='assets/canada.png' />
+                                    <h3>加拿大</h3>
+                                    <p class="text-muted">Canada</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>温哥华</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>多伦多</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>魁北克</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>维多利亚</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>蒙特利尔</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>渥太华</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>落基山</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>班芙国家公园</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!--- end tab4-->
+                <article class="tab-pane" id="tab5">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent=".tab-pane" href="#collapseFive">
+                            <i class="fa fa-male"></i> 自由行
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse">
+                            <div class="row">
+
+                                <div class="col-xs-6 col-md-4">
+                                    <img src="assets/hawaii.png" />
+                                    <h3>定制团</h3>
+                                    <p class="text-muted">Tour</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>檀香山</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>夏威夷岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>茂宜岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>火山岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>威基基海滩</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>珍珠港</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>伊奥拉尼皇宫</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-4">
+                                    <img src="assets/park.png" />
+                                    <h3>包车</h3>
+                                    <p class="text-muted">chartered bus</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>纽约</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>波士顿</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>华盛顿</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>芝加哥</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>自由女神</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>尼亚加拉瀑布</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>帝国大厦</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>哈佛大学</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-4">
+                                    <img src='assets/canada.png' />
+                                    <h3>签证</h3>
+                                    <p class="text-muted">Visa</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>温哥华</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>多伦多</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>魁北克</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>维多利亚</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>蒙特利尔</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>渥太华</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>落基山</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>班芙国家公园</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!--- end tab5-->
+                <article class="tab-pane" id="tab6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent=".tab-pane" href="#collapseSix">
+                            <i class="fa fa-map-o"></i> 主题旅游
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse">
+                            <div class="row">
+                                <div class="col-xs-6 col-md-3">
+                                    <img src="assets/ny.png" />
+                                    <h3>美国东海岸</h3>
+                                    <p class="text-muted">U.S. East</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>纽约</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>波士顿</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>华盛顿</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>芝加哥</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>自由女神</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>尼亚加拉瀑布</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>帝国大厦</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>哈佛大学</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-3">
+                                    <img src="assets/lasvegas.png" />
+                                    <h3>美国西海岸</h3>
+                                    <p class="text-muted">U.S. West</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>洛杉矶</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>旧金山</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>拉斯维加斯</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>圣地亚哥</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>大峡谷</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>优胜美地</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>黄石国家公园</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>洛杉矶环球影城</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-3">
+                                    <img src="assets/hawaii.png" />
+                                    <h3>夏威夷</h3>
+                                    <p class="text-muted">Hawaii</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>檀香山</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>夏威夷岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>茂宜岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>火山岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>威基基海滩</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>珍珠港</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>伊奥拉尼皇宫</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-3">
+                                    <img src='assets/canada.png' />
+                                    <h3>加拿大</h3>
+                                    <p class="text-muted">Canada</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>温哥华</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>多伦多</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>魁北克</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>维多利亚</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>蒙特利尔</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>渥太华</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>落基山</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>班芙国家公园</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!--- end tab6-->
+                <article class="tab-pane" id="tab7">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent=".tab-pane" href="#collapseSeven">
+                            <i class="fa fa-plane"></i> 特价机票
+                        </div>
+                        <div id="collapseSeven" class="panel-collapse collapse">
+                            <div class="row">
+                                <div class="col-xs-6 col-md-2">
+                                    <img src="assets/ny.png" />
+                                    <h3>美国东海岸</h3>
+                                    <p class="text-muted">U.S. East</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>纽约</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>波士顿</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>华盛顿</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>芝加哥</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>自由女神</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>尼亚加拉瀑布</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>帝国大厦</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>哈佛大学</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-2">
+                                    <img src="assets/lasvegas.png" />
+                                    <h3>美国西海岸</h3>
+                                    <p class="text-muted">U.S. West</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>洛杉矶</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>旧金山</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>拉斯维加斯</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>圣地亚哥</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>大峡谷</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>优胜美地</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>黄石国家公园</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>洛杉矶环球影城</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-2">
+                                    <img src="assets/florida.png" />
+                                    <h3>
+佛罗里达</h3>
+                                    <p class="text-muted">Florida</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>迈阿密</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>奥兰多</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>罗德岱堡</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>海明威故居</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>小哈瓦那</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-2">
+                                    <img src="assets/hawaii.png" />
+                                    <h3>夏威夷</h3>
+                                    <p class="text-muted">Hawaii</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>檀香山</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>夏威夷岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>茂宜岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>火山岛</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>威基基海滩</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>珍珠港</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>伊奥拉尼皇宫</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-2">
+                                    <img src="assets/park.png" />
+                                    <h3>国家公园</h3>
+                                    <p class="text-muted">National Park</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>纽约</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>波士顿</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>华盛顿</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>芝加哥</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>自由女神</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>尼亚加拉瀑布</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>帝国大厦</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>哈佛大学</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-2">
+                                    <img src='assets/canada.png' />
+                                    <h3>加拿大</h3>
+                                    <p class="text-muted">Canada</p>
+                                    <ul class="citylist">
+                                        <a href="#">
+                                            <li>温哥华</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>多伦多</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>魁北克</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>维多利亚</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>蒙特利尔</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>渥太华</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>落基山</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>班芙国家公园</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!--- end tab7-->
+            </section>
+            <!--- end tab-content section-->
+            </div>
+            <!--- end tab-vertical-->
+            </div>
+            <!--- end col-xs-12 for entire city tab-->
+        </section>
+        <!--- end row for city tabs-->
+
+        <section class="row">
+            <div class="col-xs-12">
+                <div class="drive-car">
+                    <div class="col-xs-12 col-md-2  navbar-header">
+                        <a class="navbar-brand" href="#">跟队自驾</a>
+                    </div>
+                    <ul class="col-xs-12 col-md-6 col-md-offset-3 nav nav-tabs ">
+                        <li class="active"><a data-toggle="tab" href="#domestic">国内自驾</a></li>
+                        <li><a data-toggle="tab" href="#outbound">出境自驾</a></li>
+                        <li><a data-toggle="tab" href="#overseas">境外租车</a></li>
+                    </ul>
+                    <!--- end 跟队自驾tabs naviagation-->
+                    <div class="tab-content">
+                        <div id="domestic" class="tab-pane fade in active">
+                            <div class="col-xs-12 col-md-6 card">
+                                <div class="banner">
+                                    <img src="assets/banner.jpg">
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-3 card">
+                                <div class="card-inner-div">
+                                    <a href="#">
+                                        <img src="assets/bell.jpg">
+                                        <div class="satisfaction">
+                                            &nbsp;滿意度:100%
+                                        </div>
+                                        <h4>&#36;245<span style="font-size:0.6em"> 起</span></h4>
+                                        <p>[惬意7日游] 纽约+费城+华盛顿+尼亚加拉大瀑布+波士顿+罗德岛|追寻美国发源地</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-3 card">
+                                <div class="card-inner-div">
+                                    <a href="#">
+                                        <img src="assets/archetecture.jpeg">
+                                        <div class="satisfaction">
+                                            &nbsp;滿意度:100%
+                                        </div>
+
+                                        <h4>&#36;190<span style="font-size:0.6em"> 起</span></h4>
+                                        <p>[创新8日游] 纽约+华盛顿+费城+尼亚加拉瀑布+耶鲁大学+西点军校|繁华都市古老名校</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-6 col-md-3 card">
+                                <div class="card-inner-div">
+                                    <a href="#">
+                                        <img src="assets/013663803-angle-shot-car-against-sunset-.jpg">
+                                        <div class="satisfaction">
+                                            &nbsp;滿意度:100%
+                                        </div>
+
+                                        <h4>&#36;249<span style="font-size:0.6em"> 起</span></h4>
+                                        <p>[潇洒4日游] 纽约+华盛顿+费城+阿米西人村+帝国大厦+自由女神|独立之路美国精神</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-3 card">
+                                <div class="card-inner-div">
+                                    <a href="#">
+                                        <img src="assets/bridge.jpg">
+                                        <div class="satisfaction">
+                                            &nbsp;滿意度:100%
+                                        </div>
+
+                                        <h4>&#36;389<span style="font-size:0.6em"> 起</span></h4>
+                                        <p>[精品6日游] 洛杉矶+羚羊峡谷+布莱斯峡谷+大提顿国家公园+黄石公园+太浩湖</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-3 card">
+                                <div class="card-inner-div">
+                                    <a href="#">
+                                        <img src="assets/fall2.jpg">
+                                        <div class="satisfaction">
+                                            &nbsp;滿意度:100%
+                                        </div>
+                                        <h4>&#36;354<span style="font-size:0.6em"> 起</span></h4>
+                                        <p>[精品4日游] 洛杉矶+北大峡谷+布莱斯峡谷+大提顿国家公园+黄石公园+盐湖城</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-3 card">
+                                <div class="card-inner-div">
+                                    <a href="#">
+                                        <img src="assets/mount.jpg">
+                                        <div class="satisfaction">
+                                            &nbsp;滿意度:100%
+                                        </div>
+                                        <h4>&#36;158.99<span style="font-size:0.6em"> 起</span></h4>
+                                        <p>棕榈泉+奥特莱斯购物一日游</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- end 国内自驾 tab content-->
+                        <div id="outbound" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6 card">
+                                    <div class="banner">
+                                        <img src="assets/banner2.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3 card">
+                                    <div class="card-inner-div">
+                                        <a href="#">
+                                            <img src="assets/lasvegas2.jpg">
+                                            <div class="satisfaction">
+                                                &nbsp;滿意度:100%
+                                            </div>
+                                            <h4>&#36;68<span style="font-size:0.6em"> 起</span></h4>
+                                            <p>圣塔莫尼卡+威尼斯海滩单车日记</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3 card">
+                                    <div class="card-inner-div">
+                                        <a href="#">
+                                            <img src="assets/fall.jpg">
+                                            <div class="satisfaction">
+                                                &nbsp;滿意度:100%
+                                            </div>
+                                            <h4>&#36;199<span style="font-size:0.6em"> 起</span></h4>
+                                            <p>[惬意7日游] 纽约+费城+华盛顿+尼亚加拉大瀑布+波士顿+罗德岛|追寻美国发源地</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6 col-md-3 card">
+                                    <div class="card-inner-div">
+                                        <a href="#">
+                                            <img src="assets/government.jpg">
+                                            <div class="satisfaction">
+                                                &nbsp;滿意度:100%
+                                            </div>
+                                            <h4>&#36;199<span style="font-size:0.6em"> 起</span></h4>
+                                            <p>[三岛6日游]檀香山+珍珠港+波利尼西亚文化中心+火山岛</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3 card">
+                                    <div class="card-inner-div">
+                                        <a href="#">
+                                            <img src="assets/girl.jpg">
+                                            <div class="satisfaction">
+                                                &nbsp;滿意度:100%
+                                            </div>
+                                            <h4>&#36;599<span style="font-size:0.6em"> 起</span></h4>
+                                            <p>[超值10日游] 旧金山行程2选1+洛杉矶+拉斯维加斯+羚羊彩穴</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3 card">
+                                    <div class="card-inner-div">
+                                        <a href="#">
+                                            <img src="assets/father.jpg">
+                                            <div class="satisfaction">
+                                                &nbsp;滿意度:100%
+                                            </div>
+                                            <h4>&#36;199<span style="font-size:0.6em"> 起</span></h4>
+                                            <p>[惬意2日游]旧金山行程2选1</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3 card">
+                                    <div class="card-inner-div">
+                                        <a href="#">
+                                            <img src="assets/mt3.jpg">
+                                            <div class="satisfaction">
+                                                &nbsp;滿意度:100%
+                                            </div>
+                                            <h4>&#36;129<span style="font-size:0.6em"> 起</span></h4>
+                                            <p>[惬意1日游]羚羊彩穴</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- end 出境自驾 tab content-->
+                        <div id="overseas" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6 card">
+                                    <div class="banner">
+                                        <img src="assets/banner3.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3 card">
+                                    <div class="card-inner-div">
+                                        <a href="#">
+                                            <img src="assets/nynu.jpg">
+                                            <div class="satisfaction">
+                                                &nbsp;滿意度:100%
+                                            </div>
+                                            <h4>&#36;599<span style="font-size:0.6em"> 起</span></h4>
+                                            <p>[三岛6日游]檀香山+珍珠港+波利尼西亚文化中心+火山岛</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3 card">
+                                    <div class="card-inner-div">
+                                        <a href="#">
+                                            <img src="assets/ship.jpg">
+                                            <div class="satisfaction">
+                                                &nbsp;滿意度:100%
+                                            </div>
+                                            <h4>&#36;359.99<span style="font-size:0.6em"> 起</span></h4>
+                                            <p>[惬意华盛顿游] 纽约+费城+华盛顿+尼亚加拉大瀑布+波士顿+罗德岛|追寻美国发源地</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6 col-md-3 card">
+                                    <div class="card-inner-div">
+                                        <a href="#">
+                                            <img src="assets/mt3.jpg">
+                                            <div class="satisfaction">
+                                                &nbsp;滿意度:100%
+                                            </div>
+                                            <h4>&#36;669.99<span style="font-size:0.6em"> 起</span></h4>
+                                            <p>[惬意7日游] 纽约+费城+华盛顿+尼亚加拉大瀑布+波士顿+罗德岛|追寻美国发源地</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3 card">
+                                    <div class="card-inner-div">
+                                        <a href="#">
+                                            <img src="assets/bell.jpg">
+                                            <div class="satisfaction">
+                                                &nbsp;滿意度:100%
+                                            </div>
+                                            <h4>&#36;399起<span style="font-size:0.6em"> 起</span></h4>
+                                            <p>[纽约7日游]</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3 card">
+                                    <div class="card-inner-div">
+                                        <a href="#">
+                                            <img src="assets/liberty.jpg">
+                                            <div class="satisfaction">
+                                                &nbsp;滿意度:100%
+                                            </div>
+                                            <h4>&#36;199<span style="font-size:0.6em"> 起</span></h4>
+                                            <p>圣塔莫尼卡+威尼斯海滩单车日记</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3 card">
+                                    <div class="card-inner-div">
+                                        <a href="#">
+                                            <img src="assets/nyc.jpg">
+                                            <div class="satisfaction">
+                                                &nbsp;滿意度:100%
+                                            </div>
+                                            <h4>&#36;699<span style="font-size:0.6em"> 起</span></h4>
+                                            <p>[惬意7日游] 纽约+费城+华盛顿+尼亚加拉大瀑布+波士顿+罗德岛|追寻美国发源地</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- end 境外租车 tab content-->
+                    </div>
+                    <!--- end tab content-->
+                </div>
+            </div>
+        </section>
+        <!--- end row for 跟队自驾-->
+        <section class="row">
+            <div class="col-xs-12">
+                <div class="top-5">
+                    <div class="col-xs-12 col-md-2  navbar-header">
+                        <a class="navbar-brand" href="#">
+热门品牌 TOP5</a>
+                    </div>
+                    <ul class="nav nav-pills navbar-right">
+                        <li class="active"><a data-toggle="pill" href="#north-america">北美</a></li>
+                        <li><a data-toggle="pill" href="#south-america">南美</a></li>
+                        <li><a data-toggle="pill" href="#europe">欧洲</a></li>
+                        <li><a data-toggle="pill" href="#asia">亚洲</a></li>
+                    </ul>
+                    <!--- end row for 热门品牌 TOP5 nav-tabs-->
+                    <div class="tab-content">
+                        <div id="north-america" class="tab-pane fade in active">
+                            <div class="hidden-xs hidden-sm col-md-3 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/high.jpg">
+                                    <div class="portfolio-text">
+                                        <span>亚丁<br>&smashp;<br>最接近天堂的地方 超蓝的天空 超大朵的白雲
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-4 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/father.jpg">
+                                    <div class="portfolio-text">
+                                        <span>曼谷<br>&smashp;<br>舌尖上的街头巷尾
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-7 col-md-5 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/beach2.jpg">
+                                    <div class="portfolio-text">
+                                        <span>撒哈拉<br>&smashp;<br>走进三毛的梦里
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-7 col-md-5 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/i_miss_you_when_i_drive_my_car_by_mebilia-d3c5i2f.jpg">
+                                    <div class="portfolio-text">
+                                        <span>青海<br>&smashp;<br>相约在冬季
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-4 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/liberty.jpg">
+                                    <div class="portfolio-text">
+                                        <span>杭州<br>&smashp;<br>美的不可方物
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="south-america" class="tab-pane fade">
+                            <div class="hidden-xs hidden-sm col-md-3 card2">
+                                <div class="top-imageWrap ">
+                                    <img src="assets/building.jpg">
+                                    <div class="portfolio-text">
+                                        <span>看吧，世界多美，还要等你多久
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-7 col-md-4 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/girl.jpg">
+                                    <div class="portfolio-text">
+                                        <span>香巴拉七湖<br>&smashp;<br>追逐彩虹之旅　
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-5 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/milkyway.jpg">
+                                    <div class="portfolio-text">
+                                        <span>塞班岛<br>&smashp;<br>天生丽质难自弃
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-5 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/study.jpg">
+                                    <div class="portfolio-text">
+                                        <span>塞舌尔<br>&smashp;<br>全境半数地区是自然保护区
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-4 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/statue.jpg">
+                                    <div class="portfolio-text">
+                                        <span>沙溪古镇<br>&smashp;<br>不来我便不老
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="europe" class="tab-pane fade">
+                            <div class="hidden-xs hidden-sm col-md-3 card2">
+                                <div class="top-imageWrap ">
+                                    <img src="assets/man.jpg">
+                                    <div class="portfolio-text">
+                                        <span>航拍威尼斯<br>&smashp;<br>意大利绝美海
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-4 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/girl2.jpg">
+                                    <div class="portfolio-text">
+                                        <span>故宫<br>&smashp;<br>一缸写尽600年
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-5 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/mist.jpg">
+                                    <div class="portfolio-text">
+                                        <span>塞舌尔<br>&smashp;<br>全境半数地区是自然保护区
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-md-5 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/mt.jpg">
+                                    <div class="portfolio-text">
+                                        <span>新加坡<br>&smashp;<br>一见钟情的狮城
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-md-4 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/mt4.jpg">
+                                    <div class="portfolio-text">
+                                        <span>圭亚那<br>&smashp;<br>最接近天堂的地方 超蓝的天空 超大朵的白雲
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="asia" class="tab-pane fade">
+                            <div class="hidden-xs hidden-sm col-md-3 card2">
+                                <div class="top-imageWrap ">
+                                    <img src="assets/mt5.jpg">
+                                    <div class="portfolio-text">
+                                        <span>走吧，把握生命里的每一分钟
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-4 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/archetecture.jpeg">
+                                    <div class="portfolio-text">
+                                        <span>亚丁<br>&smashp;<br>最接近天堂的地方 超蓝的天空 超大朵的白雲
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-7 col-md-5 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/i_miss_you_when_i_drive_my_car_by_mebilia-d3c5i2f.jpg">
+                                    <div class="portfolio-text">
+                                        <span>故宫<br>&smashp;<br>一缸写尽600年
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-7 col-md-5 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/mist.jpg">
+                                    <div class="portfolio-text">
+                                        <span>亚丁<br>&smashp;<br>最接近天堂的地方 超蓝的天空 超大朵的白雲
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-4 card2">
+                                <div class="top-imageWrap">
+                                    <img src="assets/mt2.jpg">
+                                    <div class="portfolio-text">
+                                        <span>亚丁<br>&smashp;<br>最接近天堂的地方 超蓝的天空 超大朵的白雲
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--- end tab content-->
+                </div>
+            </div>
+        </section>
+        <!--- end row for 热门品牌top-5-->
+    </main>
+    <!--- end main-->
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
