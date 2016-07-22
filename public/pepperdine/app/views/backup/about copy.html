@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en"  >
+    <head>
+        <meta charset="utf-8">
+        <title>GEMIN || Travel Concierge</title>
+        <meta name="viewport" content="width=device-width, initial-scale=0.9">
+        <link href="../../assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../../assets/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../../assets/css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../../assets/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../../assets/css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../../assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../../assets/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+        
+        <script src="../../assets/lib/jquery.min.js"></script>
+        <script src="../../assets/lib/jquery-ui.min.js"></script>
+        <script src="../../assets/lib/angular/angular.min.js"></script>
+        <script src="../../assets/lib/bootstrap/test/bootstrap.min.js"></script>
+        <script src="../../assets/lib/angular/ui-bootstrap-tpls.min.js"></script>
+    </head>
+    <body ng-app="travelAgency">
+        <div class="nav-container">
+            <a id="top"></a>
+            <nav class="absolute transparent">
+                <div class="nav-bar">
+                    <div class="module left">
+                        <a href="index.html">
+                            <img class="logo logo-light" alt="Tixy" src="../../assets/img/logo-light.png" />
+                            <img class="logo logo-dark" alt="Tixy" src="../../assets/img/logo-dark.png" />
+                        </a>
+                    </div>
+                    <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+                        <i class="ti-menu"></i>
+                    </div>
+                    <div class="module-group right">
+                        <div class="module left">
+                            <ul class="menu">
+                                <li>
+                                    <a href="/">
+                                        {{ 'HOME' | translate }}
+                                    </a> 
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="#">
+                                        {{ 'DESTINATION' | translate }}
+                                    </a>
+                                    <ul class="mega-menu">
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <span class="title">{{ 'UNITEDSTATES' | translate }}</span>
+                                                </li>
+                                                <li>
+                                                <a href="/app/views/newyork.html">{{ 'NEWYORK' | translate }}</a>
+                                            </li>
+                                                <li>
+                                                    <a href="page-about-us-2.html">{{ 'LOSANGELES' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="page-about-us-3.html">{{ 'LASVEGAS' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="page-services-1.html">{{ 'SANDIEGO' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="page-services-2.html">{{ 'ALASKA' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="page-services-3.html">{{ 'HAWAII' | translate }}</a> 
+                                                    <span class="label">New!</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <span class="title">{{ 'SOUTHAMERICA' | translate }}</span>
+                                                </li>
+                                                <li>
+                                                    <a href="page-login.html">{{ 'BRAZIL' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="page-register.html">{{ 'ARGENTINA' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="page-coming-soon.html"> {{ 'PERU' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="page-faq.html">{{ 'CHILE' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="page-confirmation.html">{{ 'COLOMBIA' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="page-countdown.html">{{ 'BOLIVIA' | translate }}</a>
+                                                </li> 
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li> 
+                                <li>
+                                    <a href="/app/views/concierge.html">
+                                        {{ 'CONCIERGE' | translate }}
+                                    </a> 
+                                </li> 
+                                <li >
+                                    <a href="/app/views/about.html">
+                                        {{ 'ABOUTUS' | translate }}
+                                    </a> 
+                                </li>
+                                <li >
+                                    <a href="/app/views/contact.html"> 
+                                        {{ 'CONTACTUS' | translate }}
+                                    </a> 
+                                </li>
+                                <li class=" " ng-controller="translateCtrl as translateCtrl">
+                                    <a href="#">
+                                        <span ng-click="changeLanguage('en')">English</span>/ 
+                                        <span ng-click="changeLanguage('cn')">简体中文</span>/ 
+                                        <span ng-click="changeLanguage('cn')">繁体中文</span>
+                                    </a>
+                                </li> 
+                            </ul>
+                        </div>
+                        <!--end of menu module-->
+
+
+                    </div>
+                </div>
+
+
+                <!--end of module group-->
+
+            </nav>
+        </div>
+                    <!--end of module group-->
+         
+        <div class="main-container">
+            <section class="page-title page-title-2 image-bg overlay parallax">
+                <div class="background-image-holder">
+                    <img alt="Background Image" class="background-image" src="../../assets/img/travel/about.jpg" />
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="uppercase mb8">{{ 'ABOUTUS' | translate }}</h2>
+                            <p class="lead mb0">{{ 'ABOUTUS2' | translate }}.</p>
+                        </div>
+                         
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="pb0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h5 class="uppercase">{{ 'FULLCUSTOMIZESERVICE' | translate }}</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                            </p>
+                        </div>
+                        <div class="col-sm-7">
+                            <h5 class="uppercase">{{ 'PERSONALCONCIERGE' | translate }}</h5>
+                            <div class="progress-bars">
+                                <div class="progress progress-1">
+                                    <div class="progress-bar" data-progress="20">
+                                        <span class="title">{{ 'TRIPPLANNING' | translate }}</span>
+                                    </div>
+                                </div>
+                                <!--end of progress bar-->
+                                <div class="progress progress-1">
+                                    <div class="progress-bar" data-progress="90">
+                                        <span class="title">{{ 'CONCIERGEDOALLTHEWORK' | translate }}</span>
+                                    </div>
+                                </div>
+                                <!--end of progress bar-->
+                                <div class="progress progress-1">
+                                    <div class="progress-bar" data-progress="10">
+                                        <span class="title">{{ 'PAY' | translate }}</span>
+                                    </div>
+                                </div>
+                                <!--end of progress bar-->
+                                <div class="progress progress-1">
+                                    <div class="progress-bar" data-progress="100">
+                                        <span class="title">{{ 'ENJOY' | translate }}</span>
+                                    </div>
+                                </div>
+                                <!--end of progress bar-->
+                            </div>
+                            <!--end of bars holder-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1 text-center">
+                            <h3 class="uppercase mb40 mb-xs-24">{{ 'MEETOURCONCIERGE' | translate }}</h3>
+                            <p class="lead mb64">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+                            </p>
+                            
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="image-tile outer-title text-center">
+                                <img alt="Pic" src="../../assets/img/team-1.jpg" />
+                                <div class="title mb16">
+                                    <h5 class="uppercase mb0">Sally Marsh</h5>
+                                    <span>{{ 'BLOGGER' | translate }} </span>
+                                </div>
+                                <p class="mb0">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="image-tile outer-title text-center">
+                                <img alt="Pic" src="../../assets/img/team-2.jpg" />
+                                <div class="title mb16">
+                                    <h5 class="uppercase mb0">Tim Foley</h5>
+                                    <span> {{ 'PILOT' | translate }} </span>
+                                </div>
+                                <p class="mb0">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="image-tile outer-title text-center">
+                                <img alt="Pic" src="../../assets/img/team-3.jpg" />
+                                <div class="title mb16">
+                                    <h5 class="uppercase mb0">Jake Robbins</h5>
+                                    <span>{{ 'CEO' | translate }}</span>
+                                </div>
+                                <p class="mb0">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="bg-secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text-center">
+                            <h3 class="mb64 uppercase">People &nbsp;
+                                <i class="ti-heart"></i>&nbsp; GEMIN</h3>
+                            <div class="testimonials text-slider slider-arrow-controls">
+                                <ul class="slides">
+                                    <li>
+                                        <p class="lead">I love the ease-of-use Gemin provides - I can quickly test different combinations and experiment with possibility to find that sweet spot. Amazing concierge support too, really quick turnaround!</p>
+                                        <div class="quote-author">
+                                            <img alt="Avatar" src="../../assets/img/avatar1.png" />
+                                            <h6 class="uppercase">Anna Thompson</h6>
+                                            <span>Happy Adventurer</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="lead">I love the ease-of-use Gemin provides - I can quickly test different combinations and experiment with possibility to find that sweet spot. Amazing concierge support too, really quick turnaround!</p>
+                                        <div class="quote-author">
+                                            <img alt="Avatar" src="../../assets/img/avatar2.png" />
+                                            <h6 class="uppercase">Rick Dempsey</h6>
+                                            <span>Happy Adventurer</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="lead">I love the ease-of-use Gemin provides - I can quickly test different combinations and experiment with possibility to find that sweet spot. Amazing concierge support too, really quick turnaround!</p>
+                                        <div class="quote-author">
+                                            <img alt="Avatar" src="../../assets/img/avatar3.png" />
+                                            <h6 class="uppercase">Gill Sans</h6>
+                                            <span>Happy Adventurer</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <footer class="footer-1 bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <img alt="Logo" class="logo" src="../../assets/img/logo-light.png" />
+                    </div>
+
+
+
+                </div>
+                <!--end of row-->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="sub">&copy; Copyright 2016 - GEMIN</span>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <ul class="list-inline social-list">
+                            <li>
+                                <a href="#">
+                                    <i class="ti-twitter-alt"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-dribbble"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-vimeo-alt"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--end of container-->
+            <a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Top</a>
+        </footer>
+        </div>
+        <script src="../../assets/lib/jquery.min.js"></script>
+        <script src="../../assets/lib/bootstrap.min.js"></script>
+        <script src="../../assets/lib/flickr.js"></script>
+        <script src="../../assets/lib/flexslider.min.js"></script>
+        <script src="../../assets/lib/lightbox.min.js"></script>
+        <script src="../../assets/lib/masonry.min.js"></script>
+        <script src="../../assets/lib/twitterfetcher.min.js"></script>
+        <script src="../../assets/lib/spectragram.min.js"></script>
+        <script src="../../assets/lib/ytplayer.min.js"></script>
+        <script src="../../assets/lib/countdown.min.js"></script>
+        <script src="../../assets/lib/smooth-scroll.min.js"></script>
+        <script src="../../assets/lib/parallax.js"></script>
+        <script src="../../assets/lib/scripts.js"></script>
+
+  
+    <script src="../../assets/lib/angular/angular-animate.min.js"></script>
+    <script src="../../assets/lib/angular/angular-cookies.min.js"></script>
+    <script src="../../assets/lib/angular/angular-resource.min.js"></script>
+    <script src="../../assets/lib/angular/angular-ui-router.min.js"></script>
+    <script src="../../assets/lib/angular/textAngular-sanitize.min.js"></script>
+    <script src="../../assets/lib/angular/angular-translate.min.js"></script>
+    <script src="../../assets/lib/angular/angular-translate-storage-cookie.min.js"></script>
+    <script src="../../assets/lib/angular/angular-translate-storage-local.min.js"></script>
+    <script src="../../assets/lib/angular/ocLazyLoad.min.js"></script>
+
+    <script src="../../app/app.js"></script>
+    <script src="../../app/config.js"></script>
+    <script src="../../app/controllers/main.controller.js"></script>
+    <script src="../../app/directives/directives.js"></script>
+    <script src="../../app/translations.js"></script>
+    </body>
+</html>

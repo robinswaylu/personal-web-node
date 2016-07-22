@@ -1,0 +1,216 @@
+<!doctype html>
+<html ng-app="travelAgency">
+
+    <head>
+        <!--[if lt IE 9]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+        <meta charset="utf-8">
+        <meta name="description" content="new vogue io description here">
+        <meta name="viewport" content="width=device-width">
+        <title>Travel agency Demo</title>
+        <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="assets/css/animate.min.css" />
+        <link rel="stylesheet" href="assets/css/ui-bootstrap-csp.css" />
+
+        <link href="assets/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="assets/css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="assets/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="assets/css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:300,400,600,700' rel='stylesheet' type='text/css'> 
+
+        <script src="assets/lib/jquery.min.js"></script> 
+        <script src="assets/lib/angular/angular.min.js"></script> 
+        <script src="assets/lib/angular/ui-bootstrap-tpls.min.js"></script>
+    </head>
+
+
+    <body>
+
+        <div class="nav-container">
+            <a id="top"></a>
+            <nav class="absolute transparent">
+                <div class="nav-bar">
+                    <div class="module left">
+                        <a href="/travel">
+                            <img class="logo logo-light" alt="Tixy" src="assets/img/logo-light.png" />
+                            <img class="logo logo-dark" alt="Tixy" src="assets/img/logo-dark.png" />
+                        </a>
+                    </div>
+                    <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+                        <i class="ti-menu"></i>
+                    </div>
+                    <div class="module-group right">
+                        <div class="module left">
+                            <ul class="menu">
+                                <li>
+                                    <a href="#">
+                                        {{ 'HOME' | translate }}
+                                    </a> 
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="#">
+                                        {{ 'DESTINATION' | translate }}
+                                    </a>
+                                    <ul class="mega-menu">
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <span class="title">{{ 'UNITEDSTATES' | translate }}</span>
+                                                </li>
+                                                <li>
+                                                    <a href="#newyork">{{ 'NEWYORK' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#la">{{ 'LOSANGELES' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#newyork">{{ 'LASVEGAS' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#la">{{ 'SANDIEGO' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#newyork">{{ 'ALASKA' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#la">{{ 'HAWAII' | translate }}</a> 
+                                                    <span class="label">New!</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <span class="title">{{ 'SOUTHAMERICA' | translate }}</span>
+                                                </li>
+                                                <li>
+                                                    <a href="#la">{{ 'BRAZIL' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#newyork">{{ 'ARGENTINA' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#la"> {{ 'PERU' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#newyork">{{ 'CHILE' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#la">{{ 'COLOMBIA' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#newyork">{{ 'BOLIVIA' | translate }}</a>
+                                                </li> 
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li> 
+                                <li>
+                                    <a href="#concierge">
+                                        {{ 'CONCIERGE' | translate }}
+                                    </a> 
+                                </li> 
+                                <li >
+                                    <a href="#about">
+                                        {{ 'ABOUTUS' | translate }}
+                                    </a> 
+                                </li>
+                                <li >
+                                    <a href="#contact"> 
+                                        {{ 'CONTACTUS' | translate }}
+                                    </a> 
+                                </li>
+                                <li class=" " ng-controller="translateCtrl as translateCtrl">
+                                    <a>
+                                        <span ng-click="changeLanguage('en')" class='translateBtn'>English</span>/ 
+                                        <span ng-click="changeLanguage('cn')" class='translateBtn'>简体中文</span>/ 
+                                        <span ng-click="changeLanguage('chzn')"  class='translateBtn'>繁體中文</span>
+                                    </a>
+                                </li> 
+                            </ul>
+                        </div>
+                        <!--end of menu module-->
+
+
+                    </div>
+                </div>
+
+
+                <!--end of module group-->
+
+            </nav>
+        </div>
+
+        <div ng-view></div>
+        
+        <footer class="footer-1 bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <img alt="Logo" class="logo" src="assets/img/logo-light.png" />
+                    </div>
+
+
+
+                </div>
+                <!--end of row-->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="sub">&copy; Copyright 2016 - GEMIN</span>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <ul class="list-inline social-list">
+                            <li>
+                                <a href="#">
+                                    <i class="ti-twitter-alt"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-dribbble"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-vimeo-alt"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--end of container-->
+            <a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Top</a>
+        </footer>
+        <script src="assets/lib/angular/angular-animate.min.js"></script>
+        <script src="assets/lib/angular/angular-cookies.min.js"></script>
+        <script src="assets/lib/angular/angular-resource.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+        <script src="assets/lib/angular/textAngular-sanitize.min.js"></script>
+        <script src="assets/lib/angular/angular-translate.min.js"></script>
+        <script src="assets/lib/angular/angular-translate-storage-cookie.min.js"></script>
+        <script src="assets/lib/angular/angular-translate-storage-local.min.js"></script>
+        <script src="assets/lib/angular/ocLazyLoad.min.js"></script>
+
+        <script src="app/app.js"></script>
+        <script src="app/config.js"></script>
+        <script src="app/controllers/main.controller.js"></script>
+        <script src="app/directives/directives.js"></script>
+        <script src="app/translations.js"></script>
+
+ 
+
+
+    </body>
+
+</html>

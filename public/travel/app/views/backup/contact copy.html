@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GEMIN || Travel Concierge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <link href="../../assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../assets/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../assets/css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../assets/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../assets/css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../assets/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+
+    <script src="../../assets/lib/jquery.min.js"></script>
+    <script src="../../assets/lib/jquery-ui.min.js"></script>
+    <script src="../../assets/lib/angular/angular.min.js"></script>
+    <script src="../../assets/lib/bootstrap/test/bootstrap.min.js"></script>
+    <script src="../../assets/lib/angular/ui-bootstrap-tpls.min.js"></script>
+</head>
+
+<body ng-app="travelAgency">
+    <div class="nav-container">
+        <a id="top"></a>
+        <nav> 
+            <div class="nav-bar">
+                    <div class="module left">
+                        <a href="index.html">
+                            <img class="logo logo-light" alt="Tixy" src="../../assets/img/logo-light.png" />
+                            <img class="logo logo-dark" alt="Tixy" src="../../assets/img/logo-dark.png" />
+                        </a>
+                    </div>
+                    <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+                        <i class="ti-menu"></i>
+                    </div>
+                    <div class="module-group right">
+                        <div class="module left">
+                            <ul class="menu">
+                                <li>
+                                    <a href="/">
+                                        {{ 'HOME' | translate }}
+                                    </a> 
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="#">
+                                        {{ 'DESTINATION' | translate }}
+                                    </a>
+                                    <ul class="mega-menu">
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <span class="title">{{ 'UNITEDSTATES' | translate }}</span>
+                                                </li>
+                                               <li>
+                                                <a href="/app/views/newyork.html">{{ 'NEWYORK' | translate }}</a>
+                                            </li>
+                                                <li>
+                                                    <a href="page-about-us-2.html">{{ 'LOSANGELES' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="page-about-us-3.html">{{ 'LASVEGAS' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="page-services-1.html">{{ 'SANDIEGO' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="page-services-2.html">{{ 'ALASKA' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="page-services-3.html">{{ 'HAWAII' | translate }}</a> 
+                                                    <span class="label">New!</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <span class="title">{{ 'SOUTHAMERICA' | translate }}</span>
+                                                </li>
+                                                <li>
+                                                    <a href="page-login.html">{{ 'BRAZIL' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="page-register.html">{{ 'ARGENTINA' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="page-coming-soon.html"> {{ 'PERU' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="page-faq.html">{{ 'CHILE' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="page-confirmation.html">{{ 'COLOMBIA' | translate }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="page-countdown.html">{{ 'BOLIVIA' | translate }}</a>
+                                                </li> 
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li> 
+                                <li>
+                                    <a href="/app/views/concierge.html">
+                                        {{ 'CONCIERGE' | translate }}
+                                    </a> 
+                                </li> 
+                                <li >
+                                    <a href="/app/views/about.html">
+                                        {{ 'ABOUTUS' | translate }}
+                                    </a> 
+                                </li>
+                                <li >
+                                    <a href="/app/views/contact.html"> 
+                                        {{ 'CONTACTUS' | translate }}
+                                    </a> 
+                                </li>
+                                <li class=" " ng-controller="translateCtrl as translateCtrl">
+                                    <a href="#">
+                                        <span ng-click="changeLanguage('en')">English</span>/ 
+                                        <span ng-click="changeLanguage('cn')">简体中文</span>/ 
+                                        <span ng-click="changeLanguage('cn')">繁体中文</span>
+                                    </a>
+                                </li> 
+                            </ul>
+                        </div>
+                        <!--end of menu module-->
+
+
+                    </div>
+            </div>
+
+ 
+    <!--end of module group-->
+ 
+    </nav>
+    </div>
+    <div class="main-container">
+        <section class="page-title page-title-4 bg-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="uppercase mb0">{{ 'CONTACTUS' | translate }}</h3>
+                    </div> 
+                </div>
+                <!--end of row-->
+            </div>
+            <!--end of container-->
+        </section>
+        <section class="image-square left">
+            <div class="col-md-6 image">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="../../assets/img/small2.jpg" />
+                </div>
+            </div>
+            <div class="col-md-6 col-md-offset-1 content">
+                <h4 class="uppercase">{{ 'GETINTOUCH' | translate }}</h4>
+                <p>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+                </p>
+                <hr>
+                <p>
+                    1111 Corporate Center Drive, 
+
+                    <br /> Monterey Park, 
+                    <br /> CA, USA 91754
+                </p>
+                <p>
+                    <strong>E:</strong> info@gomaygroup.com
+                    <br />
+                    <strong>P:</strong> +1-626-838-8888
+                    <br />
+                </p>
+            </div>
+        </section>
+        <section class="image-square right">
+            <div class="col-md-6 p0 image">
+                <div class="map-holder background-image-holder">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.4086040735224!2d144.976411!3d-37.87412599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad66889faebddf1%3A0xcc68084b44a30620!2sRiva+St+Kilda!5e0!3m2!1sen!2sau!4v1427779902899"></iframe>
+                     
+                </div>
+            </div>
+            <div class="col-md-6 content">
+                <form class="form-email" data-success="Thanks for your submission, we will be in touch shortly." data-error="Please fill all fields correctly.">
+                    <h6 class="uppercase text-center">{{ 'SENDAMESSAGE' | translate }}</h6>
+                    <input type="text" class="validate-required" name="name" placeholder="{{ 'NAME' | translate }}" />
+                    <input type="text" class="validate-required validate-email" name="email" placeholder="{{ 'EMAIL' | translate }}" />
+                    <textarea class="validate-required" name="message" rows="4" placeholder="{{ 'MESSAGE' | translate }}"></textarea>
+                    <button type="submit">{{ 'SEND' | translate }}</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer-1 bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <img alt="Logo" class="logo" src="../../assets/img/logo-light.png" />
+                    </div>
+
+
+
+                </div>
+                <!--end of row-->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="sub">&copy; Copyright 2016 - GEMIN</span>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <ul class="list-inline social-list">
+                            <li>
+                                <a href="#">
+                                    <i class="ti-twitter-alt"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-dribbble"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-vimeo-alt"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--end of container-->
+            <a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Top</a>
+        </footer>
+    </div>
+    <script src="../../assets/lib/jquery.min.js"></script>
+    <script src="../../assets/lib/bootstrap.min.js"></script>
+    <script src="../../assets/lib/flickr.js"></script>
+    <script src="../../assets/lib/flexslider.min.js"></script>
+    <script src="../../assets/lib/lightbox.min.js"></script>
+    <script src="../../assets/lib/masonry.min.js"></script>
+    <script src="../../assets/lib/twitterfetcher.min.js"></script>
+    <script src="../../assets/lib/spectragram.min.js"></script>
+    <script src="../../assets/lib/ytplayer.min.js"></script>
+    <script src="../../assets/lib/countdown.min.js"></script>
+    <script src="../../assets/lib/smooth-scroll.min.js"></script>
+    <script src="../../assets/lib/parallax.js"></script>
+    <script src="../../assets/lib/scripts.js"></script>
+
+
+    <script src="../../assets/lib/angular/angular-animate.min.js"></script>
+    <script src="../../assets/lib/angular/angular-cookies.min.js"></script>
+    <script src="../../assets/lib/angular/angular-resource.min.js"></script>
+    <script src="../../assets/lib/angular/angular-ui-router.min.js"></script>
+    <script src="../../assets/lib/angular/textAngular-sanitize.min.js"></script>
+    <script src="../../assets/lib/angular/angular-translate.min.js"></script>
+    <script src="../../assets/lib/angular/angular-translate-storage-cookie.min.js"></script>
+    <script src="../../assets/lib/angular/angular-translate-storage-local.min.js"></script>
+    <script src="../../assets/lib/angular/ocLazyLoad.min.js"></script>
+
+    <script src="../../app/app.js"></script>
+    <script src="../../app/config.js"></script>
+    <script src="../../app/controllers/main.controller.js"></script>
+    <script src="../../app/directives/directives.js"></script>
+    <script src="../../app/translations.js"></script>
+</body>
+
+</html>

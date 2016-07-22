@@ -1,0 +1,241 @@
+/****** PLACE YOUR CUSTOM STYLES HERE ******/
+
+.translateBtn {
+    cursor: pointer;
+}
+
+.wordmark {
+    width: 448px;
+    padding: 0;
+    /*
+      width:  165px;
+    height: 34px; 
+    background-size: auto 100%;
+    -webkit-transition: all 350ms;
+    transition: all 350ms;
+*/
+}
+
+.pepperdineBlueNav {
+    background: #00205C;
+    color: white;
+    min-height: 65px;
+}
+
+.nav-bar {
+    border-bottom: #10508C;
+}
+
+.menu > li ul {
+    background: #F7F6F5;
+}
+
+.mega-menu .title,
+.menu > li > ul li a {
+    color: #333;
+}
+
+.menu li a {
+    color: white;
+}
+
+@media (max-width: 990px) {
+    .module.widget-handle {
+        border: none !important;
+    }
+}
+
+.bg-dark {
+    background: #968C83;
+}
+
+.bg-darker {
+    background: #6F625A;
+    color: #fff;
+}
+
+.btn,
+.btn-filled{
+    border: 2px solid #EE7624;
+    color: #FFF;
+     background: #EE7624;
+}
+
+.btn:hover {
+    background: #EE7624;
+    color: #FFF;
+}
+
+.bg-darker a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.mb24 {
+    margin-bottom: 70px;
+}
+
+.bg-light .social-list a {
+    color: #fff;
+}
+
+.button-tabs .active .tab-title,
+.button-tabs .active .tab-title:hover {
+    background: #EE7624;
+    color: #fff;
+}
+
+.color-primary {
+    color: #00205C !important;
+}
+
+p.lead {
+    text-align: left;
+    font-size: 14px;
+}
+
+.pricing-table.emphasis {
+    background: #00205C;
+}
+
+a {
+    color: #EE7624;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #FE8634;
+}
+
+.bg-secondary {
+    background: #fdf0e7;
+    padding-bottom: 0px;
+}
+
+.bg-third {
+    background: rgba(230, 238, 255, 0.2);
+    padding-bottom: 0px;
+}
+
+.text-primary {
+    color: #10508C;
+}
+
+.quote {
+    overflow: hidden;
+    font-family: "Merriweather", "Georgia", Times New Roman, Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #10508C;
+    font-weight: 300;
+}
+
+.founderQuoteWrap .quote {
+    font-size: 30px;
+}
+
+.label {
+    background: #10508C;
+}
+
+.newsWrap h4 {
+    font-size: 23px;
+    line-height: 14px;
+    font-weight: normal;
+}
+ .image-bg .btn, .image-bg .btn:visited {
+    border: none;
+}
+.image-bg .btn:hover{
+    background: #FE8634;
+    border: none;
+    color: #fff;
+}
+
+ .filter_bar .title {
+    color: #00205c;
+    font-size: 14px;
+    font-family: inherit;
+    display: inline-block;
+    font-weight: bold;
+    margin: 0.5rem;
+}
+.title {
+    margin-top: 10px;
+}
+ .filter_bar {
+    outline: 1px solid #e3e3e3;
+    background-color: #f6f6f4;
+    font-family: 'Helvetica Neue',Gotham,Arial,Helvetica,sans-serif;
+    position: relative;
+    margin-bottom: 6%;
+}
+.form-type-textfield label {
+    color: #00205c;
+    font-size: 14px;
+    font-family: inherit;
+    display: inline-block;
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
+#pepperdine_news_filters_wrapper .form-type-textfield #filter_keywords, #pepperdine_news_filters_wrapper .form-type-textfield #filter_faculty_name {
+    max-width: 146px;
+}
+#pepperdine_news_filters_wrapper .form-type-textfield .form-text {
+    border: 1px solid #e5e4e4;
+    border-top: 2px solid #cccccc;
+    border-bottom: none;
+    margin-left: 3%;
+    width: 89%;
+    font-size: 14px;
+    font-family: 'Helvetica Neue',Gotham,Arial,Helvetica,sans-serif;
+    padding: 4px 8px;
+}
+html.js input.form-autocomplete {
+    padding: 4px 20px 4px 8px;
+    width: 77%;
+    background-position: 100% 7px;
+}
+html.js input.form-autocomplete {
+    background-image: url(/misc/throbber-inactive.png);
+    background-position: 100% center;
+    background-repeat: no-repeat;
+}
+input {
+    line-height: normal;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+#pepperdine_news_filters_wrapper .search_btn {
+    float: left;
+    margin-top: 47px;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+.search_btn {
+    font-family: "fontello";
+    color: #fff;
+    background-color: #ccc;
+    border: none;
+    border-radius: 2px;
+    padding: 7px 9px;
+    font-size: 12px;
+    margin-left: 8px;
+}
+input {
+    line-height: normal;
+}
+#pepperdine_news_filters_wrapper .form-type-textfield #filter_keywords, #pepperdine_news_filters_wrapper .form-type-textfield #filter_faculty_name {
+    max-width: 200px;
+}
+.filter_content{
+   position: relative;
+    left: 3px;
+}

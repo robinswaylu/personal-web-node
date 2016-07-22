@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>GEMIN || Travel Concierge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <link href="../../assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../assets/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../assets/css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../assets/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../assets/css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../assets/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+
+    <script src="../../assets/lib/jquery.min.js"></script>
+    <script src="../../assets/lib/jquery-ui.min.js"></script>
+    <script src="../../assets/lib/angular/angular.min.js"></script>
+    <script src="../../assets/lib/bootstrap/test/bootstrap.min.js"></script>
+    <script src="../../assets/lib/angular/ui-bootstrap-tpls.min.js"></script>
+</head>
+    <body ng-app="travelAgency">
+        <div class="nav-bar">
+                <div class="module left">
+                    <a href="index.html">
+                        <img class="logo logo-light" alt="Tixy" src="../../assets/img/logo-light.png" />
+                        <img class="logo logo-dark" alt="Tixy" src="../../assets/img/logo-dark.png" />
+                    </a>
+                </div>
+                <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+                    <i class="ti-menu"></i>
+                </div>
+                <div class="module-group right">
+                    <div class="module left">
+                        <ul class="menu">
+                            <li>
+                                <a href="/">
+                                        {{ 'HOME' | translate }}
+                                    </a>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#">
+                                        {{ 'DESTINATION' | translate }}
+                                    </a>
+                                <ul class="mega-menu">
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <span class="title">{{ 'UNITEDSTATES' | translate }}</span>
+                                            </li>
+                                            <li>
+                                                <a href="/app/views/newyork.html">{{ 'NEWYORK' | translate }}</a>
+                                            </li>
+                                            <li>
+                                                <a href="page-about-us-2.html">{{ 'LOSANGELES' | translate }}</a>
+                                            </li>
+                                            <li>
+                                                <a href="page-about-us-3.html">{{ 'LASVEGAS' | translate }}</a>
+                                            </li>
+                                            <li>
+                                                <a href="page-services-1.html">{{ 'SANDIEGO' | translate }}</a>
+                                            </li>
+                                            <li>
+                                                <a href="page-services-2.html">{{ 'ALASKA' | translate }}</a>
+                                            </li>
+                                            <li>
+                                                <a href="page-services-3.html">{{ 'HAWAII' | translate }}</a>
+                                                <span class="label">New!</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <span class="title">{{ 'SOUTHAMERICA' | translate }}</span>
+                                            </li>
+                                            <li>
+                                                <a href="page-login.html">{{ 'BRAZIL' | translate }}</a>
+                                            </li>
+                                            <li>
+                                                <a href="page-register.html">{{ 'ARGENTINA' | translate }}</a>
+                                            </li>
+                                            <li>
+                                                <a href="page-coming-soon.html"> {{ 'PERU' | translate }}</a>
+                                            </li>
+                                            <li>
+                                                <a href="page-faq.html">{{ 'CHILE' | translate }}</a>
+                                            </li>
+                                            <li>
+                                                <a href="page-confirmation.html">{{ 'COLOMBIA' | translate }}</a>
+                                            </li>
+                                            <li>
+                                                <a href="page-countdown.html">{{ 'BOLIVIA' | translate }}</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/app/views/concierge.html">
+                                        {{ 'CONCIERGE' | translate }}
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="/app/views/about.html">
+                                        {{ 'ABOUTUS' | translate }}
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="/app/views/contact.html"> 
+                                        {{ 'CONTACTUS' | translate }}
+                                    </a>
+                            </li>
+                            <li class=" " ng-controller="translateCtrl as translateCtrl">
+                                <a href="#">
+                                    <span ng-click="changeLanguage('en')">English</span>/
+                                    <span ng-click="changeLanguage('cn')">简体中文</span>/
+                                    <span ng-click="changeLanguage('cn')">繁体中文</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--end of menu module-->
+
+
+                </div>
+            </div> 
+        <div class="main-container">
+            <section class="cover image-bg fullscreen overlay overlay-heavy bg-dark vid-bg pt-xs-120">
+                <div class="player" data-video-id="4GC0jGODGeY" data-start-at="2"></div>
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="../../assets/img/home15.jpg" />
+                </div>
+                <div class="masonry-loader">
+                    <div class="spinner">
+                    </div>
+                </div>
+                <div class="container v-align-transform">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <h1 class="large">{{ 'NEWYORK' | translate }} </h1>
+                              <h2>{{ 'NEWYORK2' | translate }}</h2>
+                            <p class="lead mb40 mb-xs-24">{{ 'NEWYORK3' | translate }}
+                                 
+                            </p>
+                            <a class="btn btn-lg btn-white" href="#">{{ 'STARTEXPLORING' | translate }}</a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="image-edge pb0" style="padding:0">
+                <div class="col-md-6 col-sm-4 p0 col-md-push-6 col-sm-push-8">
+                    <img alt="Screenshot" class="mb-xs-24" src="../../assets/img/travel/newyorkbridge.jpg"/>
+                </div>
+                <div class="container"  >
+                    <div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform" style="top:57%">
+                        
+                        <h2  >{{ 'WALKBROOKLYN' | translate }} </h2>
+                        <div class="feature feature-3">
+                            <div class="left">
+                                <i class="ti-tag icon-sm"></i>
+                            </div>
+                            <div class="right">
+                                <h5 class="uppercase mb16">{{ 'WALKBROOKLYN2' | translate }} <a href="http://industry-kitchen.com/" target="_blank"> Industry Kitchen</a> or <a  href="http://www.deadrabbitnyc.com/" target="_blank">Dead Rabbit</a></h5>
+                                <p>
+                                    {{ 'WALKBROOKLYN3' | translate }}
+                                </p>
+                            </div>
+                        </div>
+                        <!--end of feature-->
+                        <div class="feature feature-3">
+                            <div class="left">
+                                <i class="ti-ticket icon-sm"></i>
+                            </div>
+                            <div class="right">
+                                <h5 class="uppercase mb16"> {{ 'SEAPORT' | translate }} </h5>
+                                <p>
+                                     {{ 'SEAPORT2' | translate }}<a href="http://www.freshsalt.com/wp/" target="_blank">Fresh Salt</a>  {{ 'SEAPORT3' | translate }} 
+                                </p>
+                            </div>
+                        </div>
+                        <!--end of feature-->
+                    </div>
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="image-edge" style="padding:0">
+                <div class="col-md-6 col-sm-4 p0">
+                    <img alt="Screenshot" class="mb-xs-24" src="../../assets/img/travel/photo-1443453489887-98f56bc5bb38.jpeg" />
+                </div>
+                <div class="container">
+                    <div class="col-md-5 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform right">
+                        <h2> {{ 'NEVERSLEEP' | translate }}<small> (or shall we say 4:00)</small> </h2> <div class="feature feature-3">
+                            <div class="left">
+                                <i class="ti-music-alt icon-sm"></i>
+                            </div>
+                            <div class="right">
+                                <h5 class="uppercase mb16">{{ 'NEVERSLEEP2' | translate }}   </h5>
+                                <p>
+                                    {{ 'NEVERSLEEP3' | translate }} <a href="http://www.villagevanguard.com/" target="_blank">Village Vanguard</a>({{ 'NEVERSLEEP4' | translate }}<a href="http://www.roxyhotelnyc.com/dining-nightlife/the-django/" target="_blank">The Django</a>{{ 'NEVERSLEEP5' | translate }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="bg-secondary" style="background:#f2f2f2">
+                <div class="container"><div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                            <h2>{{ 'JUSTFORYOU' | translate }} </h2>
+                            <p class="mb40 mb-xs-24">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            </p>
+                             
+                        </div>
+                    </div>
+                    <div class="row mb64 mb-xs-24">
+                        <div class="col-sm-12 text-center spread-children-large">
+                            <img alt="Pic" src="../../assets/img/avatar1.png" />
+                            <img alt="Pic" src="../../assets/img/avatar2.png" />
+                            <img alt="Pic" src="../../assets/img/avatar3.png" />
+                            <img alt="Pic" src="../../assets/img/avatar4.png" />
+                            <img alt="Pic" src="../../assets/img/avatar5.png" />
+                        </div>
+                     
+                    </div>
+                    <div class="text-center">
+                    <a class="mb0 btn btn-lg btn-filled  " href="#">{{ 'MATCHCONCERIGE' | translate }}</a>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="image-bg overlay parallax">
+                <div class="background-image-holder">
+                    <img alt="Background" class="background-image" src="../../assets/img/travel/startadventure.jpg" />
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h2 class="mb16">{{ 'CTA' | translate }}</h2>
+                            <p class="lead mb64">
+                                {{ 'CTA2' | translate }}
+                            </p>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="feature feature-1 boxed">
+                                <div class="text-center">
+                                    <i class="ti-package icon"></i>
+                                    <h5 class="uppercase">{{ 'CTA3' | translate }}</h5>
+                                </div>
+                                <p>
+                                    {{ 'CTA4' | translate }} 
+                                </p>
+                            </div>
+                            <!--end of feature-->
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="feature feature-1 boxed">
+                                <div class="text-center">
+                                    <i class="ti-infinite icon"></i>
+                                    <h5 class="uppercase">{{ 'CTA5' | translate }} </h5>
+                                </div>
+                                <p>
+                                    {{ 'CTA6' | translate }} r!
+                                </p>
+                            </div>
+                            <!--end of feature-->
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="feature feature-1 boxed">
+                                <div class="text-center">
+                                    <i class="ti-heart icon"></i>
+                                    <h5 class="uppercase">{{ 'CTA7' | translate }} </h5>
+                                </div>
+                                <p>
+                                   {{ 'CTA8' | translate }}  
+                                </p>
+                            </div>
+                            <!--end of feature-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+              
+            <footer class="footer-1 bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <img alt="Logo" class="logo" src="../../assets/img/logo-light.png" />
+                    </div>
+
+
+
+                </div>
+                <!--end of row-->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="sub">&copy; Copyright 2016 - GEMIN</span>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <ul class="list-inline social-list">
+                            <li>
+                                <a href="#">
+                                    <i class="ti-twitter-alt"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-dribbble"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-vimeo-alt"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--end of container-->
+            <a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Top</a>
+        </footer>
+        </div>
+    <script src="../../assets/lib/jquery.min.js"></script>
+    <script src="../../assets/lib/bootstrap.min.js"></script>
+    <script src="../../assets/lib/flickr.js"></script>
+    <script src="../../assets/lib/flexslider.min.js"></script>
+    <script src="../../assets/lib/lightbox.min.js"></script>
+    <script src="../../assets/lib/masonry.min.js"></script>
+    <script src="../../assets/lib/twitterfetcher.min.js"></script>
+    <script src="../../assets/lib/spectragram.min.js"></script>
+    <script src="../../assets/lib/ytplayer.min.js"></script>
+    <script src="../../assets/lib/countdown.min.js"></script>
+    <script src="../../assets/lib/smooth-scroll.min.js"></script>
+    <script src="../../assets/lib/parallax.js"></script>
+    <script src="../../assets/lib/scripts.js"></script>
+
+
+    <script src="../../assets/lib/angular/angular-animate.min.js"></script>
+    <script src="../../assets/lib/angular/angular-cookies.min.js"></script>
+    <script src="../../assets/lib/angular/angular-resource.min.js"></script>
+    <script src="../../assets/lib/angular/angular-ui-router.min.js"></script>
+    <script src="../../assets/lib/angular/textAngular-sanitize.min.js"></script>
+    <script src="../../assets/lib/angular/angular-translate.min.js"></script>
+    <script src="../../assets/lib/angular/angular-translate-storage-cookie.min.js"></script>
+    <script src="../../assets/lib/angular/angular-translate-storage-local.min.js"></script>
+    <script src="../../assets/lib/angular/ocLazyLoad.min.js"></script>
+
+    <script src="../../app/app.js"></script>
+    <script src="../../app/config.js"></script>
+    <script src="../../app/controllers/main.controller.js"></script>
+    <script src="../../app/directives/directives.js"></script>
+    <script src="../../app/translations.js"></script>
+    </body>
+</html>

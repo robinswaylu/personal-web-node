@@ -1,0 +1,261 @@
+<!doctype html>
+<html ng-app="travelAgency">
+
+<head>
+    <!--[if lt IE 9]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+    <meta charset="utf-8">
+    <meta name="description" content="Pepperdine provided the knowledge and training necessary to become a lifelong leader. Develop values-centered leaders that advance responsible business practice through education that is entrepreneurial in spirit, ethical in focus and global in orientation.
+">
+    <meta name="viewport" content="width=device-width">
+    <title>Pepperdine University Graziadio School of Business and Management
+    </title>
+    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/ui-bootstrap-csp.css" />
+
+    <link href="assets/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:300,400,600,700' rel='stylesheet' type='text/css'>
+
+    <script src="assets/lib/jquery.min.js"></script>
+    <script src="assets/lib/angular/angular.min.js"></script>
+    <script src="assets/lib/angular/ui-bootstrap-tpls.min.js"></script>
+</head>
+
+
+<body>
+
+    <div class="nav-container">
+        <a id="top"></a>
+        <nav class="absolute pepperdineBlueNav">
+            <div class="nav-bar">
+                <div class="module left">
+                    <a href="#home" class="wordmark noicon">
+                        <img class="logo logo-dark" alt="Pepperdine" src="assets/img/pepper/bschool-signature-desktop.svg" />
+                        <!--                          <img class="logo logo-dark" alt="Pepperdine" src="assets/img/pepper/pepperdine.svg" /> -->
+                    </a>
+
+<!--
+                    <a href="/">
+                        <img class="logo logo-light" alt="Pepperdine" src="assets/img/pepper/pepperdine-p.svg" />
+                        <img class="logo logo-dark" alt="Pepperdine" src="assets/img/pepper/pepperdine-seal.svg" />
+                    </a>
+-->
+                </div>
+                <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+                    <i class="ti-menu"></i>
+                </div>
+                <div class="module-group right">
+                    <div class="module left">
+                        <ul class="menu">
+                            <li>
+                                <a href="http://bschool.pepperdine.edu/programs/" target="_blank">
+                                       Programs
+                                    </a>
+                            </li>
+<!--                             <li class="has-dropdown">-->
+                            <li >
+                                <a href="http://bschool.pepperdine.edu/programs/" target="_blank">
+                                       Locations
+                                    </a>
+<!--
+                                <ul class="mega-menu">
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <span class="title">{{ 'UNITEDSTATES' | translate }}</span>
+                                            </li>
+                                            
+                                            <li>
+                                                <a href="#la">{{ 'LOSANGELES' | translate }}</a>
+                                            </li> 
+                                            <li>
+                                                <a href="#la">{{ 'SANDIEGO' | translate }}</a>
+                                            </li> 
+                                        </ul>
+                                    </li> 
+                                </ul>
+-->
+                            </li>
+                            <li>
+                                <a href="http://bschool.pepperdine.edu/about/at-a-glance/" target="_blank">
+                                       Graziadio-at-a-Glance
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="http://bschool.pepperdine.edu/about/people/faculty/" target="_blank">
+                                       Meet the Faculty
+                                    </a>
+                            </li>
+                            <li>
+                                <a  > 
+                                         Approved Assets & Style Guide
+                                    </a>
+                            </li>
+                            <!--
+                                <li class=" " ng-controller="translateCtrl as translateCtrl">
+                                    <a>
+                                        <span ng-click="changeLanguage('en')" class='translateBtn'>English</span>/ 
+                                        <span ng-click="changeLanguage('cn')" class='translateBtn'>简体中文</span>/ 
+                                        <span ng-click="changeLanguage('chzn')"  class='translateBtn'>繁體中文</span>
+                                    </a>
+                                </li> 
+-->
+                        </ul>
+                    </div>
+                    <!--end of menu module-->
+                </div>
+            </div>
+            <!--end of module group-->
+        </nav>
+    </div>
+
+    <div ng-view></div>
+
+    <footer class="footer-2 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-2 col-sm-6">
+                    <div class="widget">
+                        <h6 class="title">Opportunities</h6>
+                        <hr>
+                        <ul class="link-list recent-posts ">
+                            <li>
+                                <a >Alumni</a>
+                            </li>
+                            <li>
+                                <a  >Giving</a>
+                            </li>
+                            <li>
+                                <a >Career Services</a>
+                            </li>
+                            <li>
+                                <a>Jobs at Pepperdine</a>
+                            </li>
+                            <li>
+                                <a>Waves of Service</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--end of widget-->
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <div class="widget">
+                        <h6 class="title">Resources</h6>
+                        <hr>
+
+                        <ul class="link-list recent-posts ">
+                            <li>
+                                <a href="http://bschool.pepperdine.edu/programs/">Locations & Maps</a>
+                            </li>
+                            <li>
+                                <a >Public Safety & Parking</a>
+                            </li>
+                            <li>
+                                <a >Disability Services</a>
+                            </li>
+                            <li>
+                                <a >Emergency Information</a>
+                            </li>
+                            <li>
+                                <a >Contact Information</a>
+                            </li>
+                            <li>
+                                <a>A-Z Index</a>
+                            </li>
+                            <li>
+                                <a >RSS Feeds</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--end of widget-->
+                </div>
+
+                <div class="col-md-2 col-sm-6 hidden-xs">
+                    <img alt="pepperdine seal" class="logo" src="assets/img/pepper/pepperdine-seal.svg">
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <div class="widget">
+                        <h6 class="title">Schools</h6>
+                        <hr>
+
+                        <ul class="link-list recent-posts ">
+                            <li>
+                                <a >Seaver College</a>
+                            </li>
+                            <li>
+                                <a >School of Law</a>
+                            </li>
+                            <li>
+                                <a >Graziadio School of Business and Management</a>
+                            </li>
+                            <li>
+                                <a > Graduate School of Education and Psychology</a>
+                            </li>
+                            <li>
+                                <a >School of Public Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--end of widget-->
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <div class="widget">
+
+                        <p>Pepperdine is a Christian university committed to the highest standards of academic excellence and Christian values, where students are strengthened for lives of purpose, service, and leadership.</p>
+                    </div>
+                    <!--end of widget-->
+                </div>
+
+
+            </div>
+            <!--end of row-->
+
+        </div>
+
+    </footer>
+    <footer class="footer-2 bg-darker">
+        <div class="container  ">
+            <div class="row ">
+                <div class="text-center ">
+                    <p>Graziadio School of Business and Management
+                        <br> 24255 Pacific Coast Highway, Malibu, CA 90263 Phone: 310.506.4000
+
+                        <br> Copyright © 2016 Pepperdine University | <a href="# ">Privacy Policy</a> | <a href="# ">Terms of Use</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--end of container-->
+        <a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Top</a>
+    </footer>
+    <script src="assets/lib/angular/angular-animate.min.js"></script>
+    <script src="assets/lib/angular/angular-cookies.min.js"></script>
+    <script src="assets/lib/angular/angular-resource.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="assets/lib/angular/textAngular-sanitize.min.js"></script>
+    <script src="assets/lib/angular/angular-translate.min.js"></script>
+    <script src="assets/lib/angular/angular-translate-storage-cookie.min.js"></script>
+    <script src="assets/lib/angular/angular-translate-storage-local.min.js"></script>
+    <script src="assets/lib/angular/ocLazyLoad.min.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/config.js"></script>
+    <script src="app/controllers/main.controller.js"></script>
+    <script src="app/directives/directives.js"></script>
+    <script src="app/translations.js"></script>
+
+
+
+
+</body>
+
+</html>
