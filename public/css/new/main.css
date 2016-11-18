@@ -1,9 +1,4 @@
-/*
- * Lelande HTML5 Template
- * Copyright 2016, Filip Greksa
- * www.filipgreksa.com
- * 2016/10/09
- */
+ 
 /* Table of Contents
 =================================================== */
 /*
@@ -50,8 +45,6 @@ html, body {
   height: 100%; }
 
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
@@ -64,8 +57,6 @@ body {
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
 /* Preloader
@@ -75,6 +66,7 @@ body {
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #70e1f5, #ffd194);
   /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(right, #70e1f5, #ffd194);
   background: linear-gradient(to left, #70e1f5, #ffd194);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: block;
@@ -91,6 +83,7 @@ body {
   border: 2px solid #ffffff;
   border-radius: 50%;
   position: relative;
+  -webkit-animation: loader-scale 1s ease-out infinite;
   animation: loader-scale 1s ease-out infinite;
   top: 50%;
   margin: -28px auto 0; }
@@ -113,9 +106,10 @@ h1, h2, h3, h4, h5, h6 {
       text-decoration: none; }
 
 p {
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.6;
-  color: inherit; }
+  color: inherit;    
+}
 
 a {
   color: #64b5f6;
@@ -168,10 +162,14 @@ hr {
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
   transform: translate(0, 0);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-feature-settings: 'liga';
+  -moz-font-feature-settings: 'liga';
   font-feature-settings: 'liga'; }
 
 ::-moz-selection {
@@ -241,8 +239,6 @@ img {
 .button {
   padding: 0.85em 1.875em; }
   .button.rounded {
-    -webkit-border-radius: 1000px;
-    -moz-border-radius: 1000px;
     border-radius: 1000px; }
   .button.social {
     width: 36px;
@@ -267,6 +263,7 @@ img {
     color: #ffffff; }
   .button.button-instagram {
     background: -webkit-radial-gradient(circle farthest-corner at 32% 106%, #ffdc80 0%, #fcaf45 10%, #f77737 28%, #f56040 42%, transparent 82%), -webkit-linear-gradient(115deg, #405de6 0%, #5851db 0%, #833ab4 0%, #c13584 120%);
+    background: -webkit-radial-gradient(32% 106%, circle farthest-corner, #ffdc80 0%, #fcaf45 10%, #f77737 28%, #f56040 42%, transparent 82%), -webkit-linear-gradient(335deg, #405de6 0%, #5851db 0%, #833ab4 0%, #c13584 120%);
     background: radial-gradient(circle farthest-corner at 32% 106%, #ffdc80 0%, #fcaf45 10%, #f77737 28%, #f56040 42%, transparent 82%), linear-gradient(115deg, #405de6 0%, #5851db 0%, #833ab4 0%, #c13584 120%);
     color: #ffffff; }
   .button.button-rss {
@@ -457,9 +454,7 @@ textarea::placeholder {
   display: block;
   width: 0;
   height: 100%;
-  background-image: -moz-linear-gradient(to right, #90cdf1, #54B2E9);
   background-image: -webkit-linear-gradient(left, #90cdf1, #54B2E9);
-  background-image: -ms-linear-gradient(to right, #90cdf1, #54B2E9);
   background-image: linear-gradient(to right, #90cdf1, #54B2E9); }
 
 .progress-count {
@@ -470,6 +465,7 @@ textarea::placeholder {
   top: 0;
   left: 0;
   -webkit-transform: translate(0, -120%);
+  -ms-transform: translate(0, -120%);
   transform: translate(0, -120%);
   position: relative;
   margin: 0;
@@ -482,27 +478,23 @@ textarea::placeholder {
     margin-left: 1px; }
 
 .progress.secondary .progress-meter {
-  background-image: -moz-linear-gradient(to right, #bdbdbd, #616161);
   background-image: -webkit-linear-gradient(left, #bdbdbd, #616161);
-  background-image: -ms-linear-gradient(to right, #bdbdbd, #616161);
+  background-image: -webkit-linear-gradient(left, #d5d6d2, #ABACA5);
   background-image: linear-gradient(to right, #d5d6d2, #ABACA5); }
 
 .progress.success .progress-meter {
-  background-image: -moz-linear-gradient(to right, #66bb6a, #388e3c);
   background-image: -webkit-linear-gradient(left, #66bb6a, #388e3c);
-  background-image: -ms-linear-gradient(to right, #66bb6a, #388e3c);
+  background-image: -webkit-linear-gradient(left, #b9e496, #73C92D);
   background-image: linear-gradient(to right, #b9e496, #73C92D); }
 
 .progress.warning .progress-meter {
-  background-image: -moz-linear-gradient(to right, #ffd54f, #ffa000);
   background-image: -webkit-linear-gradient(left, #ffd54f, #ffa000);
-  background-image: -ms-linear-gradient(to right, #ffd54f, #ffa000);
+  background-image: -webkit-linear-gradient(left, #fee7a0, #FDCF41);
   background-image: linear-gradient(to right, #fee7a0, #FDCF41); }
 
 .progress.alert .progress-meter {
-  background-image: -moz-linear-gradient(to right, #ef9a9a, #d32f2f);
   background-image: -webkit-linear-gradient(left, #ef9a9a, #d32f2f);
-  background-image: -ms-linear-gradient(to right, #ef9a9a, #d32f2f);
+  background-image: -webkit-linear-gradient(left, #f8a89b, #F05136);
   background-image: linear-gradient(to right, #f8a89b, #F05136); }
 
 /* Tab
@@ -837,6 +829,7 @@ body.nav-opened .nav {
 .work-item {
   will-change: transform, opacity;
   opacity: 0.1;
+  -webkit-transition: -webkit-transform 1550ms ease-out, opacity 1350ms ease-out;
   transition: transform 1550ms ease-out, opacity 1350ms ease-out; }
   .work-item.in-view {
     opacity: 1; }
@@ -867,9 +860,7 @@ body.nav-opened .nav {
         position: absolute;
         top: 0;
         -webkit-transform: translate3d(0, 50%, 0);
-        -moz-transform: translate3d(0, 50%, 0);
         -ms-transform: translate3d(0, 50%, 0);
-        -o-transform: translate3d(0, 50%, 0);
         transform: translate3d(0, 50%, 0);
         width: 100%; }
       .work-item .figure .figcaption > a {
@@ -1124,14 +1115,25 @@ body.nav-opened .nav {
 
 /* Preloader Animation
 =================================================== */
-@keyframes loader-scale {
+@-webkit-keyframes loader-scale {
   0% {
+    -webkit-transform: scale(0);
     transform: scale(0);
     opacity: 0; }
   50% {
     opacity: 1; }
   100% {
+    -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 0; } }
-
-/*# sourceMappingURL=main.css.map */
+@keyframes loader-scale {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0; } }
