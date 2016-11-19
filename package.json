@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "dependencies": {
     "express": "~4.5.1",
-   "nodemailer": "^1.8.0"
+    "express-favicon": "^2.0.0",
+    "nodemailer": "^1.8.0",
+    "serve-favicon": "^2.3.2"
   }
 }
