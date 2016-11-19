@@ -43,7 +43,7 @@ app.get('/', function (req, res) {
 //});
 
 /*--------------------Routing Over----------------------------*/ 
-app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(favicon(__dirname + '/favicon.png'));
 app.use('/public', express.static(__dirname + '/public')); 
 app.listen(3000, function () {
     console.log("Express Started on Port 3000");
